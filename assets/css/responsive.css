@@ -15,6 +15,7 @@
 	.slider_controlar i.next::after { 
 		width: 150px; 
 	}
+	
 }
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
 	 
@@ -26,6 +27,18 @@
 		font-weight: 400;
 		font-size: 16px;
 	} 
+	.social-buttons {
+		display: flex;
+		justify-content: center;
+		column-gap: 24px;
+		margin-top: 24px;
+	}
+	.social-buttons .button-item { 
+		flex-basis: 50%;
+	}
+	.social-buttons .button-item.youtube { 
+		margin-bottom: 0px;
+	}
 }
 
 @media only screen and (min-width: 767px) and (max-width: 991px) {
@@ -67,7 +80,17 @@
 	}
 	.mentor-wrapper .slider_controlar i.next {
 		right: 42%;
+	} 
+	.callCenter-section .call-detail-wrap .call-text {
+		width: 100%;
 	}
+	.social-buttons { 
+		margin-top: 24px;
+	}
+	.page-header { 
+		padding: 50px 0;
+	}
+	
 	 
 }
 
@@ -121,6 +144,9 @@
 	.mentor-wrapper .slider_controlar i.next {
 		right: 40%;
 	}
+	.callCenter-section .call-detail-wrap { 
+		padding: 30px 35px;
+	}
 }
 
 @media all and (max-width:575px) { 
@@ -146,6 +172,27 @@
 	}
 	.mentor-section {
 		padding: 40px 0 110px;
+	}
+	.callCenter-section {
+		padding: 40px 0; 
+	}
+	.social-buttons {
+		margin-top: 15px;
+	}
+	.social-buttons .button-item.youtube { 
+		margin-bottom: 15px;
+	}
+	.social-buttons .button-item .item-text .join-btn { 
+		font-size: 14px; 
+	}
+	.social-buttons .button-item { 
+		padding: 25px;
+	}
+	.page-header {
+		padding: 30px 0;
+	}
+	.page-header .page-title { 
+		font-size: 25px; 
 	}
 }
 @media all and (max-width:520px) {

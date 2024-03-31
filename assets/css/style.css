@@ -200,7 +200,18 @@ p {
 	padding: 10px 0;
 }
 
-
+.home-page-menu{
+	display: none;
+}
+.sticky .home-page-menu{
+	display: block;
+}
+.sticky .language{
+	display: none;
+}
+.sticky .phone{
+	display: none;
+}
 
 
 .header-horizontal-menu {
@@ -828,27 +839,240 @@ p {
 	font-family: var(--poppins);
 	font-weight: 400;
 	font-size: 16px;
-	color: #ffffff;
+	color: var(--white-color);
 	margin-bottom: 20px;
 }
 .call-detail-wrap .call-text .available{
 	font-family: var(--poppins);
 	font-weight: 900;
 	font-size: 16px;
-	color: #ffffff;
-	margin-bottom: 15px;
+	color: var(--white-color);
+	margin-bottom: 24px;
 }
 .call-detail-wrap .call-text .phone_number{
 	font-family: var(--poppins);
 	font-weight: 400;
 	font-size: 16px;
-	color: #ffffff;
-	margin-bottom: 15px;
+	color: var(--primary-color); 
+	background-color: var(--white-color);
+	padding: 12px;
+	border-radius: 8px;
+	display: inline-block;
+}
+.call-detail-wrap .call-text .phone_number i{
+	margin-right: 7px;
+} 
+.social-buttons .button-item{
+	border-radius: 8px;
+	padding: 26px 32px;
+}
+.social-buttons .button-item.youtube{
+	background-color: #FF0031;
+	margin-bottom: 24px;
+}
+.social-buttons .button-item.facebook{
+	background: #378CE7;
+}
+ 
+.social-buttons .button-item .item-text .title{
+	font-family: var(--passion);
+	font-size: 24px;
+	color: var(--white-color);
+	margin-bottom: 20px;
+}
+.social-buttons .button-item .item-text .join-btn{
+	background: var(--white-color);
+	border-radius: 5px;
+	padding: 10px 12px;
+	display: inline-block;
+	font-size: 16px;
+	color: var(--title-color);
+}
+.social-buttons .button-item .item-text .join-btn i{
+	color: var(--color-33);
+	font-size: 10px;
+	margin-left: 7px;
+} 
+.social-buttons .button-item .item-img img{
+	width: 62px;
 }
 /* Call Center Section End */
 
 
 /******** Home Page End *********/
+
+.page-header{
+	background-image: url('../img/page-header-bg.png'); 
+	padding: 80px 0;
+}
+.page-header .page-title{
+	text-align: center;
+	font-family: var(--passion);
+	font-size: 32px;
+	color: var(--white-color);
+	text-transform: capitalize;
+}
+/******** Course details *********/
+.course-details-section{
+	padding: 60px 0;
+}
+.course-details-section .inner-section:not(:last-child){
+	padding-bottom: 60px;
+}
+.course-details-section .inner-section .inner-sec-title{
+	font-family: var(--passion);
+	font-weight: 400;
+	font-size: 24px;
+	text-transform: capitalize;
+	margin-bottom: 32px;
+}
+.course-details-section .course-info .short-description p{
+	font-family: var(--poppins);
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--paragraph-color-62);
+}
+.course-instructor{}
+.course-instructor .single-instructor{
+	padding: 24px;
+	border: 1px solid var(--ddd);
+	border-radius: 8px;
+	margin-bottom: 24px;
+	display: flex;
+	column-gap: 24px;
+	align-items: center;
+}
+.course-instructor .single-instructor .instructor-name{
+	font-family: var(--poppins);
+	color: var(--color-33);
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.course-instructor .single-instructor .instructor-designation{
+	font-family: var(--poppins);
+	color: var(--color-33);
+	font-size: 16px;
+	font-weight: 300;
+}
+.course-plan{}
+.course-plan .what-will-get{
+	border-radius: 8px;
+	border: 1px solid var(--ddd);
+	padding: 30px;
+}
+.course-plan .what-will-get .title{
+	font-size: 24px;
+	font-weight: 600;
+	font-family: var(--poppins);
+	color: var(--title-color);
+	margin-bottom: 24px;
+}
+.course-plan .what-will-get ul li{
+	font-family: var(--poppins);
+	color: var(--title-color);
+	font-weight: 400;
+	font-size: 16px; 
+}
+.course-plan .what-will-get ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.course-plan .what-will-get ul li::before{
+	content: '\f14a';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 400;
+	margin-right: 10px;
+}
+.course-syllabus .accordion-item {
+	background-color: #fff;
+	border: 0;
+	border-radius: 8px;	
+	margin-bottom: 12px;
+}
+.course-syllabus .accordion-body{
+	border: 1px solid var(--ddd);
+	border-radius:0px 0px 8px 8px;
+}
+.course-syllabus .accordion-item .accordion-button{
+	background: var(--primary-color);
+	border-radius: 8px;
+	color: var(--white-color);
+	font-weight: 600;
+	font-family: var(--poppins);
+}
+.course-syllabus .accordion-item .accordion-button:focus{
+	box-shadow: unset;
+}
+.course-syllabus .accordion-item .accordion-button:not(.collapsed){
+	background: var(--primary-color);
+	border-radius: 8px 8px 0px 0px;
+}
+.course-syllabus .accordion-item:last-of-type .accordion-button.collapsed {
+	border-bottom-right-radius: 8PX;
+	border-bottom-left-radius: 8PX;
+}
+
+.course-syllabus .accordion-item .accordion-button::after{
+	content: '\f078';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+	background-image: none;
+	color: var(--white-color);
+}
+.course-syllabus .accordion-item .accordion-button:not(.collapsed)::after{
+	content: '\f068';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+	background-image: none;
+	color: var(--white-color);
+}
+.course-syllabus .accordion-body{
+	padding: 0;
+}
+.course-syllabus .accordion-body .chapter{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+.course-syllabus .accordion-body .chapter:not(:last-child){
+	border-bottom: 1px solid var(--ddd);
+}
+.course-syllabus .accordion-body .chapter .title-area {
+	display: flex;
+	align-items: start;
+	margin-right: 10px;
+}
+.course-syllabus .accordion-body .chapter .title-area i{
+	margin-right: 10px;
+}
+.course-syllabus .accordion-body .chapter .title{
+	font-family: var(--poppins);
+	font-weight: 500;
+	font-size: 16px;
+	color: var(--title-color);
+}
+.course-syllabus .accordion-body .chapter .title i{
+	margin-right: 10px;
+}
+
+.student-reviews{}
+.student-reviews{}
+.student-reviews .single-review{
+	border-radius: 8px;
+	border: 1px solid var(--ddd);
+	padding: 20px;
+}
+.student-reviews .single-review .reviewer-info{
+	display: flex;
+	align-items: center;
+}
+.student-reviews .single-review .reviewer-info .name-designation .name{
+	font-family: var(--passion);
+	font-weight: 400;
+	font-size: 16px;
+}
+.student-reviews .single-review .reviewer-info .name-designation .designation{}
+/******** Course details end *********/
 
 
 
@@ -884,8 +1108,7 @@ p {
 
 /* footer section */
 .footer_section {
-	background-color: var(--white-color);
-	background-image: url('../img/footer-banner.png');
+	background-color: var(--primary-color); 
 	padding: 60px 0 35px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -899,6 +1122,7 @@ p {
 	text-align: justify;
 	line-height: 26px;
 	margin: 32px 60px 32px 0;
+	color: var(--white-color);
 }
 
 .footer_menu {
@@ -912,14 +1136,14 @@ p {
 }
 
 .footer_menu li a {
-	color: var(--black-color);
+	color: var(--white-color);
 	font-size: 24px;
 }
 
 .footer_section .widget_title {
 	font-size: 16px;
 	font-family: var(--poppins);
-	color: var(--title-color);
+	color: var(--white-color);
 	line-height: 26px;
 	text-transform: capitalize;
 	font-weight: 700;
@@ -929,7 +1153,7 @@ p {
 .widget_menu li a {
 	font-size: 16px;
 	font-weight: 500;
-	color: var(--title-color);
+	color: var(--white-color);
 	line-height: 24px;
 	margin-bottom: 20px;
 	display: block;
