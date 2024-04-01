@@ -130,7 +130,7 @@
         <section class="course-details-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-xl-7 order-xl-1 order-2">
                         <div class="left-side">
                             <div class="inner-section course-info">
                                 <h2 class="inner-sec-title">JST GUCCHO D UNIT EXAM</h2>
@@ -148,7 +148,7 @@
                                 <h2 class="inner-sec-title">Our Course Instructors</h2>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="single-instructor">
+                                        <div class="single-instructor" data-bs-toggle="modal" data-bs-target="#instructor_1">
                                             <div class="instructor-img">
                                                 <img src="assets/img/instructors/instructor.png" alt="instructor">
                                             </div>
@@ -159,7 +159,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="single-instructor">
+                                        <div class="single-instructor" data-bs-toggle="modal" data-bs-target="#instructor_1">
                                             <div class="instructor-img">
                                                 <img src="assets/img/instructors/instructor.png" alt="instructor">
                                             </div>
@@ -170,7 +170,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="single-instructor">
+                                        <div class="single-instructor" data-bs-toggle="modal" data-bs-target="#instructor_1">
                                             <div class="instructor-img">
                                                 <img src="assets/img/instructors/instructor.png" alt="instructor">
                                             </div>
@@ -181,7 +181,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="single-instructor">
+                                        <div class="single-instructor" data-bs-toggle="modal" data-bs-target="#instructor_1">
                                             <div class="instructor-img">
                                                 <img src="assets/img/instructors/instructor.png" alt="instructor">
                                             </div>
@@ -192,7 +192,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="single-instructor">
+                                        <div class="single-instructor" data-bs-toggle="modal" data-bs-target="#instructor_1">
                                             <div class="instructor-img">
                                                 <img src="assets/img/instructors/instructor.png" alt="instructor">
                                             </div>
@@ -203,7 +203,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="single-instructor">
+                                        <div class="single-instructor" data-bs-toggle="modal" data-bs-target="#instructor_1">
                                             <div class="instructor-img">
                                                 <img src="assets/img/instructors/instructor.png" alt="instructor">
                                             </div>
@@ -454,7 +454,37 @@
                                         <i class="prev fas fa-arrow-left"></i>
                                         <i class="next fas fa-arrow-right"></i>
                                     </div>
-                                    <div class="review-wrap">
+                                    <div class="student-review-wrap">
+                                        <div class="single-review">
+                                            <div class="reviewer-info">
+                                                <div class="profile">
+                                                    <img src="assets/img/student-review/student-1.png"
+                                                        alt="student review">
+                                                </div>
+                                                <div class="name-designation">
+                                                    <h2 class="name">Md. Asraful Islam</h2>
+                                                    <p class="designation">UI UX DESIGNER</p>
+                                                </div>
+                                            </div>
+                                            <p class="review-text">It is a long established fact that a reader will be
+                                                distracted by the readable content of a page when looking at its layout.
+                                            </p>
+                                        </div>
+                                        <div class="single-review">
+                                            <div class="reviewer-info">
+                                                <div class="profile">
+                                                    <img src="assets/img/student-review/student-1.png"
+                                                        alt="student review">
+                                                </div>
+                                                <div class="name-designation">
+                                                    <h2 class="name">Md. Asraful Islam</h2>
+                                                    <p class="designation">UI UX DESIGNER</p>
+                                                </div>
+                                            </div>
+                                            <p class="review-text">It is a long established fact that a reader will be
+                                                distracted by the readable content of a page when looking at its layout.
+                                            </p>
+                                        </div>
                                         <div class="single-review">
                                             <div class="reviewer-info">
                                                 <div class="profile">
@@ -476,13 +506,13 @@
 
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-xl-5 order-xl-2 order-1">
                         <div class="right-side sticky">
                             <div class="course-sidebar">
                                 <div class="course-thumbnail">
                                     <img src="assets/img/course/course-sidebar.png" alt="course thumbnail">
                                     <div class="video-overlay">
-                                        <a href="#"><i class="far fa-play-circle"></i></a>
+                                        <a href="#" class="btn-ripple"><i class="far fa-play-circle"></i></a>
                                     </div>
                                 </div>
                                 <div class="course-info">
@@ -499,8 +529,9 @@
                                     <a href="#" class="enroll-btn">Enroll This Course</a>
                                 </div>
                                 <div class="details-call">
-                                    <a href="tel:01786293291">To know details</a>
-                                    <a href="tel:01786293291"><i class="fas fa-phone-alt"></i> Call Now</a>
+                                    <a href="tel:01786293291" class="know-text">To know details</a>
+                                    <a href="tel:01786293291" class="call-text"><i class="fas fa-phone-alt"></i> Call
+                                        Now</a>
                                 </div>
                             </div>
                         </div>
@@ -508,7 +539,20 @@
                 </div>
             </div>
         </section>
-        <!-- Course Details section end -->
+        <!-- Course Details section end --> 
+       
+        <!-- Instructor detail Modal -->
+        <div class="modal fade instructor-detail-modal" id="instructor_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content"> 
+                    <div class="modal-body">
+                        <div class="instructor-detail-img">
+                            <img src="assets/img/instructors/instructor-detail.png" alt="instructor detail">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
 
 
     </main>

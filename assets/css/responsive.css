@@ -17,6 +17,12 @@
 	}
 	
 }
+@media only screen and (min-width:1200px){
+	.course-details-section .sticky {
+		position: sticky;
+		top: 80px;
+	}
+}
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
 	 
 }
@@ -90,7 +96,12 @@
 	.page-header { 
 		padding: 50px 0;
 	}
-	
+	.switcher-section .icon-area .login::after { 
+		width: 96%; 
+	}
+	.switcher-section .title-area .order-confirmation, .switcher-section .title-area .login, .switcher-section .title-area .payment {
+		flex-basis: 25%;
+	}
 	 
 }
 
@@ -147,6 +158,15 @@
 	.callCenter-section .call-detail-wrap { 
 		padding: 30px 35px;
 	}
+	.course-details-section {
+		padding: 40px 0;
+	}
+	.switcher-section .icon-area .login::after {
+		width: 95%;
+	}
+	.switcher-section {
+		padding: 40px 0;
+	}
 }
 
 @media all and (max-width:575px) { 
@@ -193,6 +213,36 @@
 	}
 	.page-header .page-title { 
 		font-size: 25px; 
+	}
+	.course-sidebar .course-info { 
+		flex-direction: column;
+		row-gap: 5px;
+	}
+	.course-sidebar .course-thumbnail { 
+		margin-bottom: 20px;
+	}
+	.course-sidebar .enroll-button {
+		margin: 20px 0;
+	}
+	.course-sidebar .details-call { 
+		margin-bottom: 0px;
+	}
+	.student-reviews {
+		padding: 0; 
+	}
+	.student-reviews .slider_controlar { 
+		padding: 20px 0;
+	} 
+	.student-reviews .slider_controlar i { 
+		top: 0%; 
+	}
+	.student-reviews .slider_controlar i.prev{
+		left: 44%;
+		transform: translateX(-50%);
+	}
+	.student-reviews .slider_controlar i.next {
+		right: 44%;
+		transform: translateX(50%);
 	}
 }
 @media all and (max-width:520px) {
@@ -249,6 +299,20 @@
 	}
 	.menu-buttons .mode img {
 		width: 25px;
+	}
+
+	.student-reviews .slider_controlar i.prev{
+		left: 43%; 
+	}
+	.student-reviews .slider_controlar i.next {
+		right: 43%; 
+	}
+	.switcher-section .icon-area .login::after {
+		width: 93%;
+	}
+	.switcher-section .title-area h4 { 
+		font-weight: 500;
+		font-size: 14px; 
 	}
 	
 }

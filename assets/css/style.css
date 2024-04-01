@@ -931,8 +931,7 @@ p {
 	font-weight: 400;
 	font-size: 16px;
 	color: var(--paragraph-color-62);
-}
-.course-instructor{}
+} 
 .course-instructor .single-instructor{
 	padding: 24px;
 	border: 1px solid var(--ddd);
@@ -941,6 +940,7 @@ p {
 	display: flex;
 	column-gap: 24px;
 	align-items: center;
+	cursor: pointer;
 }
 .course-instructor .single-instructor .instructor-name{
 	font-family: var(--poppins);
@@ -955,6 +955,17 @@ p {
 	font-size: 16px;
 	font-weight: 300;
 }
+.instructor-detail-modal .modal-content { 
+	background-color: var(--primary-color);
+	border-radius: 8px; 
+}
+.instructor-detail-modal .modal-content .instructor-detail-img{
+	border-radius: 8px;
+	overflow: hidden;
+}
+.instructor-detail-modal .modal-content .instructor-detail-img img{
+	width: 100%;
+} 
 .course-plan{}
 .course-plan .what-will-get{
 	border-radius: 8px;
@@ -1054,27 +1065,377 @@ p {
 .course-syllabus .accordion-body .chapter .title i{
 	margin-right: 10px;
 }
-
-.student-reviews{}
-.student-reviews{}
+ 
+.student-reviews{
+	padding: 0 45px;
+	position: relative;
+}
 .student-reviews .single-review{
 	border-radius: 8px;
 	border: 1px solid var(--ddd);
 	padding: 20px;
+	margin: 0 12px;
 }
 .student-reviews .single-review .reviewer-info{
 	display: flex;
 	align-items: center;
+	margin-bottom: 20px;
+}
+.student-reviews .single-review .reviewer-info .profile{
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-right: 20px; 
+}
+.student-reviews .single-review .reviewer-info .profile img{
+	width: 100%;
 }
 .student-reviews .single-review .reviewer-info .name-designation .name{
 	font-family: var(--passion);
 	font-weight: 400;
 	font-size: 16px;
+	color: var(--title-color);
 }
-.student-reviews .single-review .reviewer-info .name-designation .designation{}
+.student-reviews .single-review .reviewer-info .name-designation .designation{
+	font-family: var(--poppins);
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--title-color);
+	text-transform: uppercase;
+}
+.student-reviews .single-review .review-text{
+	font-family: var(--poppins);
+	font-weight: 300;
+	font-size: 16px;
+	color: var(--title-color);
+	text-align: justify;
+}
+.student-reviews .slider_controlar i {
+	width: 40px;
+	height: 40px;
+	color: var(--primary-color);
+	border:1px solid var(--primary-color);
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	cursor: pointer;
+	position: absolute; 
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 99;
+	transition: all .3s linear;
+}
+.student-reviews .slider_controlar i:hover{
+	background: var(--primary-color);
+	color: var(--white-color);
+}
+.student-reviews .slider_controlar i.prev{ 
+	left: 0; 
+}
+.student-reviews .slider_controlar i.next{ 
+	right: 0; 
+}
+
+.course-sidebar{
+	border-radius: 8px;
+	border: 1px solid var(--ddd);
+	border-radius: 8px;
+	padding: 24px; 
+	box-shadow: 0px 4px 37px 0px #00000012;
+	margin-bottom: 20px;
+}
+.course-sidebar .course-thumbnail{
+	border-radius: 8px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 32px;
+}
+.course-sidebar .course-thumbnail .video-overlay{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.course-sidebar .course-thumbnail .video-overlay a{
+	color: #ffffff;  
+	display: inline-block;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+.course-sidebar .course-thumbnail .video-overlay a i{
+	font-size: 60px;  
+}
+.course-sidebar .course-thumbnail .video-overlay .btn-ripple {
+	-webkit-animation: ripple-blue 1s linear infinite;
+	animation: ripple-blue 1s linear infinite;
+}
+.course-sidebar .course-thumbnail img{
+	width: 100%;
+}
+.course-sidebar .course-info{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.course-sidebar .course-info .pirce .discount{
+	font-family: var(--poppins);
+	font-size: 16px;
+	font-weight: 500; 
+	text-decoration: line-through;
+	color: var(--secondary-color);
+	margin-right: 8px;
+}
+.course-sidebar .course-info .pirce .regular{
+	font-family: var(--poppins);
+	font-size: 24px;
+	font-weight: 700; 
+	color: var(--title-color);
+}
+.course-sidebar .course-info .total-enrolled .enrolled-amount,
+.course-sidebar .course-info .total-enrolled .enroll-text{
+	font-family: var(--poppins);
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--title-color);
+}
+.course-sidebar .course-info .total-enrolled .enrolled-amount{
+	color: var(--secondary-color);
+	margin-left: 5px;
+}
+.course-sidebar .course-info .total-enrolled .enroll-text i{
+	margin-right: 8px;
+}
+.course-sidebar .enroll-button{
+	margin: 30px 0;
+}
+.course-sidebar .enroll-button .enroll-btn{
+	font-family: var(--poppins);
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: capitalize;
+	background: var(--primary-color);
+	border-radius: 5px;
+	text-align: center;
+	color: var(--white-color);
+	display: block;
+	padding: 16px;
+	
+}
+.course-sidebar .details-call{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.course-sidebar .details-call .call-text,
+.course-sidebar .details-call .know-text{
+	font-family: var(--poppins);
+	font-size: 16px;
+	text-decoration: underline;
+}
+.course-sidebar .details-call .call-text{
+	color: var(--green-color);
+}
+.course-sidebar .details-call .call-text i{
+	margin-right: 5px;
+}
+.course-sidebar .details-call .know-text{
+	color: var(--title-color);
+}
 /******** Course details end *********/
 
+/************* Cart *************/
 
+/* page switcher */
+.switcher-section{
+	padding: 60px 0;
+}
+.switcher-section .title-area,	
+.switcher-section .icon-area{
+	display: flex;
+	justify-content: space-between; 
+	align-items: center;
+} 
+.switcher-section .icon-area .icon {
+	width: 32px;
+	height: 32px;
+	background-color: var(--white-color);
+	border: 1px solid var(--title-color);
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.switcher-section .icon-area .icon.active{
+	background-color: var(--green-color);
+	color: var(--white-color);
+	border-color: var(--green-color);
+}
+.switcher-section .icon-area .icon i{
+	font-size: 16px;
+}
+.switcher-section .icon-area .login{
+	position: relative;
+	flex-grow: 1;
+}
+.switcher-section .icon-area .login::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%); 
+	left: 10px;
+	width: 98%;
+	height: 1px;
+	border: 1px dashed var(--title-color);
+	z-index: -1;
+} 
+.switcher-section .icon-area .dots{
+	border: 1px dashed var(--black-color); 
+}
+.switcher-section .title-area .order-confirmation,
+.switcher-section .title-area .login,
+.switcher-section .title-area .payment{
+	flex-basis: 18%; 
+	text-align: center;
+	margin-top: 16px;
+}
+.switcher-section .title-area h4{
+	font-family: var(--poppins);
+	font-weight: 600;
+	font-size: 16px;
+	color: var(--title-color);
+}
+
+.cart-content-section{
+	padding: 0 0 60px;
+}
+.cart-card{
+	padding: 24px;
+	border: 1px solid var(--title-color);
+	border-radius: 8px;
+	margin-bottom: 24px;
+}
+.cart-card .title{
+	font-family: var(--poppins);
+	font-weight: 700;
+	font-size: 20px;
+	color: var(--title-color);
+}
+.cart-card .sub-title{
+	font-family: var(--poppins);
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--title-color);
+	margin-top: 20px;
+}
+.cart-card .prices{}
+.cart-card .prices .price-item{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+.cart-card .prices .price-item:nth-child(1){
+	border-top: 1px solid var(--title-color);
+	padding-top: 24px;
+	margin-top: 24px;
+}
+.cart-card .prices .price-item:nth-child(2){
+	border-bottom: 1px solid var(--title-color);
+	padding-bottom: 24px;
+}
+.cart-card .prices .price-item .price-text,
+.cart-card .prices .price-item .price-amount{
+	font-family: var(--poppins);
+	font-weight: 500;
+	font-size: 16px;
+	color: var(--title-color);
+}
+.cart-card .coupon{
+	margin-bottom: 30px;
+}
+.cart-card .coupon input{
+	border: 1px solid var(--title-color);
+	padding: 12px;
+}
+.cart-card .coupon input:focus{
+	box-shadow: unset;
+}
+.cart-card .coupon .input-group-text{
+	background: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	color: var(--white-color);
+	font-family: var(--poppins);
+	font-weight: 600;
+	font-size: 16px;
+}
+.cart-card .btn-area .main-btn{
+	padding: 12px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	background: var(--primary-color);
+	color: var(--white-color);
+	display: block;
+	font-family: var(--poppins);
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: capitalize;
+	text-align: center;
+	transition: all .3s linear;
+}
+.cart-card .btn-area .main-btn:hover{
+	background: var(--white-color);
+	border: 1px solid var(--primary-color);
+	color: var(--title-color);
+}
+.cart-card .mobile-number{
+	margin: 32px 0 24px;
+	width: 100%;
+	border: 1px solid var(--title-color);
+	border-radius: 5px;
+	padding: 12px;
+}
+.cart-card .resent{
+	text-align: right;
+}
+.cart-card .resent .resent-btn{
+	font-family: var(--poppins);
+	font-size: 16px;
+	color: var(--title-color);
+	font-weight: 400;
+	border: 0;
+	background: transparent;
+	margin-top: 24px;
+}
+/************* Cart end *************/
+
+
+/* ripple animation */
+@-webkit-keyframes ripple-blue {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3), 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3), 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3)
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0)
+	}
+}
+
+@keyframes ripple-blue {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3), 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3), 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3)
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0)
+	}
+}
 
 
 

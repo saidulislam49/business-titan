@@ -60,7 +60,7 @@
 
 	}
 
-	// Client Review 
+	// Mentors slider 
 	$('.mentors').slick({
 		dots: false,
 		infinite: true,
@@ -70,6 +70,26 @@
 		slidesToScroll: 1,
 		prevArrow: $('.prev'),
 		nextArrow: $('.next'),
+		 
+	});
+	// Student Review 
+	$('.student-review-wrap').slick({
+		dots: false,
+		infinite: true,
+		speed: 1000,
+		autoplay: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		prevArrow: $('.prev'),
+		nextArrow: $('.next'),
+		responsive: [
+			{
+			  breakpoint: 992,
+			  settings: {
+				slidesToShow: 1,
+			  }
+			} 
+		  ]
 		 
 	});
 
