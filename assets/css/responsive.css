@@ -244,6 +244,26 @@
 		right: 44%;
 		transform: translateX(50%);
 	}
+	.page-header .content-area .duration-mark { 
+		gap: 15px;
+		margin-top: 24px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.timer-area .timer-buttons .button {
+		padding: 10px; 
+	}
+	.question-item { 
+		padding: 20px;
+		margin-bottom: 15px;
+	}
+	.question-item .question-options .option-item label { 
+		padding: 8px;
+		margin: 0px 0px -10px 0px;
+	}
+	.question-btn .submit-btn {
+		padding: 12px; 
+	}
 }
 @media all and (max-width:520px) {
 	.desktop_logo img {

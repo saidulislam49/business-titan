@@ -113,6 +113,17 @@
 			);
 	});
 
+	// sticky question timer
+	$(window).on('scroll', function(event) {    
+        var scroll = $(window).scrollTop();
+        if (scroll < 350) {
+            $(".timer-area").removeClass("sticky");
+        } else{
+            $(".timer-area").addClass("sticky");
+        }
+    });
+
+
 }(jQuery));
  
 
