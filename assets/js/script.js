@@ -123,6 +123,53 @@
         }
     });
 
+	// Dark Mode Start
+	var modeIcons = document.querySelectorAll('.mode-icon');
+	var heroBg = document.querySelector('.hero-section');
+	var themeStorage = localStorage.getItem('theme');
+	var headerLogo = document.getElementById('header-logo');
+	if(themeStorage){
+		document.body.classList.add(themeStorage);
+	} 
+	modeIcons.forEach(modeIcon =>{
+		modeIcon.addEventListener('click',function(){
+			document.body.classList.toggle('dark-mode'); 
+			if(document.body.classList.contains('dark-mode')){
+				// sun moon icon
+				modeIcon.src = 'assets/img/sun.png';
+				// logo
+				headerLogo.src = 'assets/img/light-logo.png';
+				// local storage set
+				localStorage.setItem('theme','dark-mode');
+				heroBg.setAttribute('style',"background-image: url('assets/img/hero-bg-dark.png')")
+			}else{
+				modeIcon.src = 'assets/img/moon.png';
+				// logo
+				headerLogo.src = 'assets/img/dark-logo.png';
+				localStorage.removeItem('theme','dark-mode');
+				heroBg.setAttribute('style',"background-image: url('assets/img/hero-bg.png')")
+			}
+			
+		})
+		if(document.body.classList.contains('dark-mode')){
+			// sun moon icon
+			modeIcon.src = 'assets/img/sun.png';
+			// logo
+			headerLogo.src = 'assets/img/light-logo.png';
+			// local storage set
+			localStorage.setItem('theme','dark-mode');
+			heroBg.setAttribute('style',"background-image: url('assets/img/hero-bg-dark.png')")
+		}else{
+			modeIcon.src = 'assets/img/moon.png';
+			// logo
+			headerLogo.src = 'assets/img/dark-logo.png';
+			localStorage.removeItem('theme','dark-mode');
+			heroBg.setAttribute('style',"background-image: url('assets/img/hero-bg.png')")
+		}
+	
+	})
+	
+	// Dark Mode end
 
 }(jQuery));
  
