@@ -13,6 +13,7 @@
 	--color-33: #333333;
 	--white-color: #ffffff;
 	--text-white-color: #ffffff;
+	--bg-white-color: #ffffff;
 	--black-color: #000000;
 	--green-color: #147618;
 	--f5f5: #F5F5F5;
@@ -30,19 +31,17 @@
 	--color-33: #ffffff;
 	--white-color: #0A314B;
 	--text-white-color: #ffffff;
+	--bg-white-color: #042C48;
 	--black-color: #ffffff;
 	--green-color: #147618;
-	--f5f5: #F5F5F5;
+	--f5f5: #0A314B;
 	--ddd: #DDDDDD;
 	--shadow-color: #E8EAEC;
 	--transparent: #0067AB;
-}
-.dark-mode .menu-buttons .language select { 
-	border: 1px solid var(--transparent); 
-}
-.dark-mode .menu-buttons .phone a { 
-	border: 1px solid transparent; 
-}
+	--dark-light: #0067AB;
+	--bg-secondary: #042C48;
+	
+} 
 /* Dark Mode CSS end */
 
 
@@ -697,7 +696,7 @@ p {
 
 /* Speciality section */
 .speciality-section {
-	background-image: var(--white-color);
+	background-color: var(--bg-white-color);
 	padding: 60px 0;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -777,6 +776,7 @@ p {
 /* Mentor Section */
 .mentor-section {
 	padding: 60px 0;
+	background-color: var(--bg-white-color);
 }
 
 .mentor-section .section-title {
@@ -788,6 +788,7 @@ p {
 	font-family: var(--passion);
 	font-size: 32px;
 	font-weight: 400;
+	color: var(--title-color);
 }
 
 .mentor-wrapper {
@@ -836,7 +837,7 @@ p {
 }
 
 .mentor-wrapper .mentors .mentor-item {
-	background: #ffffff;
+	background: var(--white-color);
 	padding: 24px;
 	border-radius: 16px;
 	display: flex;
@@ -1057,6 +1058,7 @@ p {
 /******** Course details *********/
 .course-details-section {
 	padding: 60px 0;
+	background-color: var(--bg-white-color);
 }
 
 .course-details-section .inner-section:not(:last-child) {
@@ -1069,6 +1071,7 @@ p {
 	font-size: 24px;
 	text-transform: capitalize;
 	margin-bottom: 32px;
+	color: var(--title-color);
 }
 
 .course-details-section .course-info .short-description p {
@@ -1159,7 +1162,7 @@ p {
 .course-syllabus .accordion-item {
 	background-color: #fff;
 	border: 0;
-	border-radius: 8px;
+	border-radius: 10px;
 	margin-bottom: 12px;
 }
 
@@ -1170,7 +1173,7 @@ p {
 
 .course-syllabus .accordion-item .accordion-button {
 	background: var(--primary-color);
-	border-radius: 8px;
+	border-radius: 5px;
 	color: var(--text-white-color);
 	font-weight: 600;
 	font-family: var(--poppins);
@@ -1457,6 +1460,7 @@ p {
 /* page switcher */
 .switcher-section {
 	padding: 60px 0;
+	background-color: var(--bg-white-color);
 }
 
 .switcher-section .title-area,
@@ -1489,8 +1493,9 @@ p {
 }
 
 .switcher-section .icon-area .login {
-	position: relative;
-	flex-grow: 1;
+    position: relative;
+    flex-grow: 1;
+    z-index: 1;
 }
 
 .switcher-section .icon-area .login::after {
@@ -1526,6 +1531,7 @@ p {
 
 .cart-content-section {
 	padding: 0 0 60px;
+	background-color: var(--bg-white-color);
 }
 
 .cart-card {
@@ -1644,6 +1650,7 @@ p {
 
 .range-section {
 	padding: 60px 0;
+	background-color: var(--bg-white-color);
 }
 
 .range-card {
@@ -1664,6 +1671,7 @@ p {
 	text-align: center;
 	text-transform: capitalize;
 	margin-bottom: 24px;
+	color: var(--title-color);
 }
 
 .range-card .range-item .sub-title {
@@ -1671,7 +1679,7 @@ p {
 	font-size: 16px;
 	font-weight: 400;
 	text-align: center;
-
+	color: var(--title-color);
 }
 
 .range-card .range-item .range {
@@ -1684,6 +1692,7 @@ p {
 	font-weight: 700;
 	text-align: left;
 	margin-bottom: 20px;
+	color: var(--title-color);
 }
 
 .range-card .btn-area {
@@ -1792,6 +1801,7 @@ p {
 
 .question-section {
 	padding: 60px 0;
+	background-color: var(--bg-white-color);
 }
 
 .question-item {
@@ -1806,6 +1816,7 @@ p {
 	font-family: var(--poppins);
 	font-size: 16px;
 	font-weight: 800;
+	color: var(--title-color);
 }
 
 .question-item .question-options .option-item input {
@@ -1949,6 +1960,7 @@ p {
 /************* Solution page  *************/
 .solution-section {
 	padding: 60px 0;
+	background-color: var(--bg-white-color);
 }
 
 .solution-item {
@@ -1964,6 +1976,7 @@ p {
 	font-size: 16px;
 	font-weight: 800;
 	margin-bottom: 24px;
+	color: var(--title-color);
 }
 
 .solution-item .solution-options .option-item {
@@ -2060,6 +2073,7 @@ p {
 /************* Newsroom page  *************/
 .newsroom-section {
 	padding: 60px 0;
+	background-color: var(--bg-white-color);
 }
 
 .single-news {
@@ -2085,6 +2099,7 @@ p {
 	font-family: var(--passion);
 	font-size: 24px;
 	font-weight: 400;
+	color: var(--title-color);
 }
 
 .single-news .newsroom-top .title-area .publishing-date {
@@ -2292,6 +2307,7 @@ p {
 
 .admission-card-wrap {
 	padding: 60px 0 10px;
+	background-color: var(--bg-white-color);
 }
 
 .admission-all-button {
@@ -2335,6 +2351,7 @@ p {
 /* Our-Admittion-Course-pagination*/
 .pagination-item {
 	padding-bottom: 60px;
+	background-color: var(--bg-white-color);
 }
 
 .pagination {
@@ -2375,6 +2392,7 @@ p {
 /* ====Notes-page-Start==== */
 .notes {
 	padding: 60px 0 28px;
+	background-color: var(--bg-white-color);
 }
 
 .notes .notes-button {
@@ -2603,6 +2621,7 @@ p {
 /* About-Us */
 .about-us {
 	padding: 80px 0;
+	background-color: var(--bg-white-color);
 }
 
 .about-us-image {
@@ -2669,6 +2688,7 @@ p {
 /* Start-Learning */
 .start-learning {
 	padding: 60px 0;
+	background-color: var(--bg-white-color);
 }
 
 .start-learn-text h2 {
@@ -2710,6 +2730,7 @@ p {
 /* ======Exam-page-Start====== */
 .exam {
 	padding: 60px 0;
+	background-color: var(--bg-white-color);
 }
 
 .upc-nxt-exm {
@@ -2759,6 +2780,7 @@ p {
 	font-size: 16px;
 	font-weight: 300;
 	color: var(--paragraph-color-66);
+	line-height: 23px;
 }
 
 .form-option .input-group-wrap {
@@ -2770,9 +2792,9 @@ p {
 	top: 50%;
 	right: 0;
 	transform: translateY(-50%);
-	font-size: 21px;
-	padding: 11px 13px;
+	font-size: 25px; 
 	cursor: pointer;
+	padding: 10px;
 }
 
 .form-option select option {
@@ -2861,6 +2883,7 @@ p {
 /* =====Leader-Board-Start==== */
 .leader-board {
 	padding: 60px 0;
+	background-color: var(--bg-white-color);
 }
 
 .leader-input-wrap {
@@ -2870,7 +2893,7 @@ p {
 
 .leader-input-wrap input {
 	width: 100%;
-	font-family: var(--white-color);
+	font-family: var(--poppins);
 	font-size: 16px;
 	font-weight: 400;
 	padding: 24px;
@@ -3045,3 +3068,317 @@ p {
 .widget_menu li a i {
 	margin-right: 14px;
 }
+
+
+
+/* Dark Mode Css  */
+.dark-mode .menu-buttons .language select { 
+	border: 1px solid var(--transparent); 
+}
+.dark-mode .menu-buttons .phone a { 
+	border: 1px solid transparent; 
+}
+/* mentor section */
+.dark-mode .mentor-wrapper .mentors .mentor-item{
+	border: 1px solid var(--dark-light);
+}
+.dark-mode .mentor-wrapper .slider_controlar i { 
+    color: #ffffff;
+    border: 1px solid var(--dark-light); 
+}
+.dark-mode .mentor-wrapper .slider_controlar i:hover {
+    background: var(--dark-light); 
+}
+/* mentor section end */
+/* call center section */
+.dark-mode .call-detail-wrap{
+	background-color: #346387;
+}
+.dark-mode .call-detail-wrap .call-text .phone_number{ 
+	background-color: #ffffff;
+}
+.dark-mode .social-buttons .button-item .item-text .join-btn{ 
+	background-color: #ffffff;
+	color: #313131;
+	border: 1px solid transparent;
+}
+.dark-mode .social-buttons .button-item .item-text .join-btn i{
+	color: #313131;
+} 
+.dark-mode .social-buttons .button-item.youtube {
+    background-color: #A8D0B5; 
+}
+/* call center section end*/
+/* speciality section */
+.dark-mode .specialities .speciality-item .left .icon { 
+    background-color: var(--bg-secondary); 
+}
+.dark-mode .specialities .speciality-item { 
+    border: 1px solid var(--dark-light); 
+}
+/* speciality section end */
+/* about page  */
+.dark-mode .start-learn-text .start-btn a { 
+    color: var(--text-white-color);
+    background: var(--secondary-color);   
+    border: 1px solid transparent;
+}
+.dark-mode .vission-mission-card { 
+    background: var(--bg-secondary); 
+    border: 1px solid var(--dark-light);
+}
+/* about page end */
+/* admission-course page */
+.dark-mode .pagination .page-item .arrow {
+    background: var(--dark-light) !important; 
+}
+.dark-mode .pagination .page-item .page-link { 
+    border: 1px solid var(--dark-light); 
+	background-color: var(--bg-secondary);
+}
+.dark-mode .pagination .page-item .active-item, .dark-mode .pagination .page-item .page-link:hover {
+    background: var(--dark-light); 
+}
+/* admission-course page end */
+/* cart page */
+.dark-mode .switcher-section .icon-area .icon i { 
+    color: #ffffff;
+}
+.dark-mode .switcher-section .icon-area .login::after { 
+    border: 1px dashed var(--dark-light); 
+}
+.dark-mode .switcher-section .icon-area .icon { 
+    border: 1px solid var(--dark-light); 
+}
+.dark-mode .cart-card { 
+    border: 1px solid var(--dark-light); 
+}
+.dark-mode .cart-card .coupon input{
+	background-color: var(--bg-secondary);
+	border-color: var(--dark-light);
+}
+.dark-mode .cart-card .coupon .input-group-text{
+	background-color: var(--secondary-color);
+	border-color: var(--secondary-color);
+}
+.dark-mode .cart-card .btn-area .main-btn { 
+    border: 1px solid transparent; 
+    background: var(--secondary-color); 
+}
+.dark-mode .cart-card .mobile-number{
+	background-color: var(--bg-secondary-color);
+	border-color: var(--dark-light);
+}
+/* cart page end */
+
+/* course details */
+.dark-mode .course-details-section .inner-section .inner-sec-title{
+	color: var(--secondary-color);
+}
+.dark-mode .course-sidebar { 
+    border: 1px solid var(--dark-light); 
+}
+.dark-mode .course-sidebar .enroll-button .enroll-btn { 
+    background: var(--secondary-color); 
+    color: var(--text-white-color); 
+    border: 1px solid transparent;
+}
+.dark-mode .course-instructor .single-instructor { 
+    border: 1px solid var(--dark-light); 
+}
+.dark-mode .course-plan .what-will-get { 
+    border: 1px solid var(--dark-light); 
+}
+.dark-mode .course-syllabus .accordion-item .accordion-button:not(.collapsed) {
+	background: var(--dark-light); 
+}
+.dark-mode .course-syllabus .accordion-body .chapter:not(:last-child){
+	border-color: var(--dark-light);
+}
+.dark-mode .course-syllabus .accordion-body{
+	background-color: var(--bg-secondary);
+	border: 1px solid var(--dark-light);
+}
+.dark-mode .course-syllabus .accordion-body .chapter .title-area i{
+	color: #ffffff;
+}
+.dark-mode .chapter .icon-area i{
+	color: #ffffff;
+}
+.dark-mode .student-reviews .single-review{
+	border-color: var(--dark-light);
+}
+.dark-mode .student-reviews .slider_controlar i {
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    border: 1px solid var(--dark-light); 
+}
+.dark-mode .student-reviews .slider_controlar i:hover {
+    background: var(--dark-light); 
+}
+/* course details end */
+
+/* exam page  */
+.dark-mode .upc-nxt-exm a { 
+    border: 1px solid var(--dark-light); 
+    color: var(--title-color); 
+}
+.dark-mode .upc-nxt-exm .active, .dark-mode .upc-nxt-exm a:hover {
+    background-color: var(--dark-light); 
+}
+.dark-mode .exam .form-option .input-group-wrap input, .dark-mode .exam .form-option select {
+    border: 1px solid var(--dark-light); 
+    background: transparent; 
+}
+.dark-mode .exam .form-option .input-group-wrap input::placeholder,
+.dark-mode .exam .form-option .input-group-wrap .input--text{
+	color: #ffffff;
+}
+.dark-mode .exam .exam-card,.dark-mode .exam .exam-card-2 {  
+    border: 0.75px solid var(--dark-light); 
+}
+.dark-mode .exam-card .exam-botton a, .dark-mode .exam-card-2 .exam-botton a{
+	background-color: var(--secondary-color);
+}
+/* exam page end */
+/* leaderboard page */
+.dark-mode .leader-input-wrap input {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--dark-light);
+}
+.dark-mode .leader-input-wrap input::placeholder{
+	color: #ffffff;
+}
+.dark-mode .board-profile { 
+	background-color: var(--primary-color);
+    border: 1px solid var(--dark-light); 
+}
+.dark-mode .board-profile .position { 
+    background: var(--bg-secondary);
+	border: 1px solid var(--dark-light);
+}
+.dark-mode .board-profile .right-content .mark { 
+    background: var(--bg-secondary); 
+	border: 1px solid var(--dark-light);
+}
+/* leaderboard page end */
+/* news page */
+.dark-mode .single-news {
+    background-color: var(--primary-color);
+}
+.dark-mode .newsroom-bottom .news-comment-box textarea { 
+	border-bottom: 1px solid var(--dark-light);
+    background-color: var(--primary-color);
+	color: #fff;
+}
+.dark-mode .newsroom-bottom .news-comment-box textarea::placeholder {
+	color: #ffffff;
+}
+.dark-mode .newsroom-bottom .news-btns { 
+    border-top: 1px solid var(--dark-light);
+    border-bottom: 1px solid var(--dark-light); 
+}
+.dark-mode .newsroom-bottom .display-comments .cmt-card {
+    padding: 12px;
+    border-radius: 8px;
+    background: var(--bg-secondary);
+    display: flex;
+}
+.dark-mode .newsroom-bottom .news-btns .button {
+    border: 0;
+    background: transparent; 
+}
+/* news page end */
+/* notes page  */
+.dark-mode .main-accordion .accordion-title:not(.collapsed) {
+    background-color: var(--dark-light);
+}
+.dark-mode .accordion-wrap { 
+    border: 0; 
+}
+.dark-mode .main-accordion { 
+    border: 1px solid var(--dark-light);
+    border-radius: 8px;
+}
+.dark-mode .accordion-single-item .accordion-button{
+	background-color: var(--primary-color);
+	border: 1px solid var(--dark-light);
+}
+.dark-mode .accordion-single-item .accordion-button:not(.collapsed) { 
+    background: var(--dark-light) !important; 
+}
+.dark-mode .notes-item-wrap .single-notes { 
+    border: 1px solid var(--dark-light); 
+	background-color: var(--primary-color);
+}
+.dark-mode .notes-item-wrap .single-notes .icon a ,
+.dark-mode .notes-item-wrap .single-notes .icon p {
+    font-size: 30px;
+    color: #ffffff;
+}
+.dark-mode .notes .notes-button a { 
+    border: 1px solid var(--dark-light); 
+}
+.dark-mode .notes .notes-button .active, .dark-mode .notes .notes-button a:hover {
+    box-shadow: unset;
+    background: var(--secondary-color); 
+	border: 1px solid var(--secondary-color);
+}
+/* notes page end */
+/* question page */
+.dark-mode .question-item .question-options .option-item label { 
+    border: 1px solid var(--dark-light); 
+}
+.question-item .question-options .option-item input:checked+label {
+	background: var(--dark-light); 
+	border: 1px solid var(--dark-light);
+}
+.dark-mode .question-item .topic-name {
+    background-color: var(--dark-light); 
+}
+/* question page end */
+/* range page */
+.dark-mode .range-card { 
+    border: 1px solid var(--dark-light);
+    background-color: var(--primary-color);
+}
+.dark-mode .range-card .btn-area .main-btn { 
+    background: var(--secondary-color); 
+}
+.dark-mode .range-input::-webkit-slider-runnable-track { 
+	background: var(--primary-color);
+	border: 1px solid var(--dark-light); 
+}
+
+.dark-mode .range-input::-moz-range-track { 
+	background: var(--primary-color);
+	border: 1px solid var(--dark-light); 
+}
+
+.dark-mode .range-input::-webkit-slider-thumb { 
+	background-color: var(--dark-light); 
+	box-shadow: -407px 0 0 400px var(--dark-light);
+}
+
+.dark-mode .range-input::-moz-range-thumb { 
+	background-color: var(--dark-light); 
+	box-shadow: -407px 0 0 400px var(--dark-light);
+}
+/* range page end */
+/* solution page */
+.dark-mode .solution-item .solution-bottom .explanation{
+	background-color: var(--dark-light);
+}
+.dark-mode .solution-item .solution-options .option-item { 
+    border: 1px solid var(--dark-light); 
+}
+.dark-mode .solution-item .solution-options .option-item.correct {
+    background: var(--green-color);
+    border-color: var(--green-color);
+}
+.dark-mode .solution-item .solution-bottom .wrong, .dark-mode .solution-item .solution-bottom .correct { 
+    border: 1px solid var(--dark-light); 
+}
+/* solution page end */
+/* Dark Mode Css End */
