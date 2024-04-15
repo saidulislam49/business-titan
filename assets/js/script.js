@@ -126,6 +126,7 @@
 	// Dark Mode Start
 	var modeIcons = document.querySelectorAll('.mode-icon');
 	var heroBg = document.querySelector('.hero-section');
+	// var aboutUsImage = document.getElementById('aboutUsImage'); 
 	var themeStorage = localStorage.getItem('theme');
 	var headerLogo = document.getElementById('header-logo');
 	if(themeStorage){
@@ -139,6 +140,8 @@
 				modeIcon.src = 'assets/img/sun.png';
 				// logo
 				headerLogo.src = 'assets/img/light-logo.png';
+				// about image
+				// aboutUsImage.src = 'assets/img/about-us/Frame.png';
 				// local storage set
 				localStorage.setItem('theme','dark-mode');
 				heroBg.setAttribute('style',"background-image: url('assets/img/hero-bg-dark.png')")
@@ -146,16 +149,22 @@
 				modeIcon.src = 'assets/img/moon.png';
 				// logo
 				headerLogo.src = 'assets/img/dark-logo.png';
+				// about image
+				// aboutUsImage.src = 'assets/img/about-us/about-us-dark.png';
+				// local storage set
 				localStorage.removeItem('theme','dark-mode');
 				heroBg.setAttribute('style',"background-image: url('assets/img/hero-bg.png')")
 			}
 			
 		})
+
 		if(document.body.classList.contains('dark-mode')){
 			// sun moon icon
 			modeIcon.src = 'assets/img/sun.png';
 			// logo
 			headerLogo.src = 'assets/img/light-logo.png';
+			// about image
+			// aboutUsImage.src = 'assets/img/about-us/Frame.png';
 			// local storage set
 			localStorage.setItem('theme','dark-mode');
 			heroBg.setAttribute('style',"background-image: url('assets/img/hero-bg-dark.png')")
@@ -163,6 +172,9 @@
 			modeIcon.src = 'assets/img/moon.png';
 			// logo
 			headerLogo.src = 'assets/img/dark-logo.png';
+			// about image
+			// aboutUsImage.src = 'assets/img/about-us/about-us-dark.png';
+			// local storage set
 			localStorage.removeItem('theme','dark-mode');
 			heroBg.setAttribute('style',"background-image: url('assets/img/hero-bg.png')")
 		}
