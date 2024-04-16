@@ -714,7 +714,12 @@
 	.board-profile .right-content .mark {
 		padding: 5px 8px;
 	}
-
+	.course-dashboard-wrap .course-dashboard-header {
+		padding: 20px 20px; 
+	}
+	.course-dashboard-wrap {
+		padding: 30px 0 30px;
+	}
 }
 @media all and (max-width:520px) {
 	.desktop_logo img {
@@ -726,8 +731,9 @@
 	.menu-buttons .mode img {
 		width: 30px; 
 	}
-	
-	 
+	.course-dashboard-wrap .swithcer .prev, .course-dashboard-wrap .swithcer .next { 
+		font-size: 15px; 
+	}
 }
 
 @media all and (max-width:490px) {
