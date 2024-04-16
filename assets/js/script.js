@@ -70,7 +70,7 @@
 		slidesToScroll: 1,
 		prevArrow: $('.prev'),
 		nextArrow: $('.next'),
-		 
+
 	});
 	// Student Review 
 	$('.student-review-wrap').slick({
@@ -84,13 +84,13 @@
 		nextArrow: $('.next'),
 		responsive: [
 			{
-			  breakpoint: 992,
-			  settings: {
-				slidesToShow: 1,
-			  }
-			} 
-		  ]
-		 
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		]
+
 	});
 
 	// speciality count
@@ -114,75 +114,112 @@
 	});
 
 	// sticky question timer
-	$(window).on('scroll', function(event) {    
-        var scroll = $(window).scrollTop();
-        if (scroll < 350) {
-            $(".timer-area").removeClass("sticky");
-        } else{
-            $(".timer-area").addClass("sticky");
-        }
-    });
+	$(window).on('scroll', function (event) {
+		var scroll = $(window).scrollTop();
+		if (scroll < 350) {
+			$(".timer-area").removeClass("sticky");
+		} else {
+			$(".timer-area").addClass("sticky");
+		}
+	});
 
 	// Dark Mode Start
 	var modeIcons = document.querySelectorAll('.mode-icon');
 	var heroBg = document.querySelector('.hero-section');
-	// var aboutUsImage = document.getElementById('aboutUsImage'); 
+	var heroRightImg = document.getElementById('hero_right_img');
+	var aboutUsImage = document.getElementById('aboutUsImage');
 	var themeStorage = localStorage.getItem('theme');
 	var headerLogo = document.getElementById('header-logo');
-	if(themeStorage){
+	if (themeStorage) {
 		document.body.classList.add(themeStorage);
-	} 
-	modeIcons.forEach(modeIcon =>{
-		modeIcon.addEventListener('click',function(){
-			document.body.classList.toggle('dark-mode'); 
-			if(document.body.classList.contains('dark-mode')){
+	}
+	modeIcons.forEach(modeIcon => {
+		modeIcon.addEventListener('click', function () {
+			document.body.classList.toggle('dark-mode');
+			if (document.body.classList.contains('dark-mode')) {
+				// local storage set
+				localStorage.setItem('theme', 'dark-mode');
 				// sun moon icon
 				modeIcon.src = 'assets/img/sun.png';
 				// logo
 				headerLogo.src = 'assets/img/light-logo.png';
 				// about image
-				// aboutUsImage.src = 'assets/img/about-us/Frame.png';
+				if (aboutUsImage) {
+					aboutUsImage.src = 'assets/img/about-us/about-us-dark.png';
+				}
+				// hero bg home
+				if(heroBg){
+					heroBg.setAttribute('style', "background-image: url('assets/img/hero-bg-dark.png')")
+				}
+				if(heroRightImg){
+					heroRightImg.src = 'assets/img/hero-image-dark.png';
+				}
+
+			} else {
 				// local storage set
-				localStorage.setItem('theme','dark-mode');
-				heroBg.setAttribute('style',"background-image: url('assets/img/hero-bg-dark.png')")
-			}else{
+				localStorage.removeItem('theme', 'dark-mode');
 				modeIcon.src = 'assets/img/moon.png';
 				// logo
 				headerLogo.src = 'assets/img/dark-logo.png';
 				// about image
-				// aboutUsImage.src = 'assets/img/about-us/about-us-dark.png';
-				// local storage set
-				localStorage.removeItem('theme','dark-mode');
-				heroBg.setAttribute('style',"background-image: url('assets/img/hero-bg.png')")
+				if (aboutUsImage) {
+					aboutUsImage.src = 'assets/img/about-us/Frame.png';
+				}
+				// hero bg home
+				if(heroBg){
+					heroBg.setAttribute('style', "background-image: url('assets/img/hero-bg.png')")
+				}
+				if(heroRightImg){
+					heroRightImg.src = 'assets/img/hero-image.png';
+				}
 			}
-			
+
 		})
 
-		if(document.body.classList.contains('dark-mode')){
+		if (document.body.classList.contains('dark-mode')) {
+			// local storage set
+			localStorage.setItem('theme', 'dark-mode');
 			// sun moon icon
 			modeIcon.src = 'assets/img/sun.png';
 			// logo
 			headerLogo.src = 'assets/img/light-logo.png';
+
 			// about image
-			// aboutUsImage.src = 'assets/img/about-us/Frame.png';
+			if (aboutUsImage) {
+				aboutUsImage.src = 'assets/img/about-us/about-us-dark.png';
+			} 
+			// hero bg home
+			if(heroBg){
+				heroBg.setAttribute('style', "background-image: url('assets/img/hero-bg-dark.png')")
+			}
+			if(heroRightImg){
+				heroRightImg.src = 'assets/img/hero-image-dark.png';
+			}
+		} else {
 			// local storage set
-			localStorage.setItem('theme','dark-mode');
-			heroBg.setAttribute('style',"background-image: url('assets/img/hero-bg-dark.png')")
-		}else{
+			localStorage.removeItem('theme', 'dark-mode');
 			modeIcon.src = 'assets/img/moon.png';
 			// logo
 			headerLogo.src = 'assets/img/dark-logo.png';
 			// about image
-			// aboutUsImage.src = 'assets/img/about-us/about-us-dark.png';
-			// local storage set
-			localStorage.removeItem('theme','dark-mode');
-			heroBg.setAttribute('style',"background-image: url('assets/img/hero-bg.png')")
+			if (aboutUsImage) {
+				aboutUsImage.src = 'assets/img/about-us/Frame.png';
+			}			
+			// hero bg home
+			if(heroBg){
+				heroBg.setAttribute('style', "background-image: url('assets/img/hero-bg.png')")
+			}
+			if(heroRightImg){
+				heroRightImg.src = 'assets/img/hero-image.png';
+			}
 		}
-	
+
 	})
-	
+
 	// Dark Mode end
 
+
+
 }(jQuery));
- 
+
 
