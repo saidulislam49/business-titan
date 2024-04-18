@@ -1207,6 +1207,7 @@ p {
 	border-radius: 8px;
 	border: 1px solid var(--ddd);
 	padding: 30px;
+	margin-bottom: 20px;
 }
 
 .course-plan .what-will-get .title {
@@ -2722,8 +2723,9 @@ p {
 	background-color: var(--bg-white-color);
 	overflow: hidden;
 }
+
 .topic-section .topic-wrap {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .topic-section .topic-wrap .topic-main-title {
@@ -2738,18 +2740,21 @@ p {
 	border: 1px solid var(--primary-color);
 }
 
-.topic-section .topic-wrap .notes-item-wrap{
+.topic-section .topic-wrap .notes-item-wrap {
 	border: 1px solid var(--ddd);
 	border-top: 0;
 	padding: 20px 20px 10px 20px;
 }
-.topic-section .topic-wrap .notes-item-wrap .single-notes .single-note-title p { 
-    font-size: 15px; 
+
+.topic-section .topic-wrap .notes-item-wrap .single-notes .single-note-title p {
+	font-size: 15px;
 }
-.topic-section .topic-wrap .notes-item-wrap .row>*{
+
+.topic-section .topic-wrap .notes-item-wrap .row>* {
 	padding-left: 5px !important;
 	padding-right: 5px !important;
 }
+
 .topic-section .notes-item-wrap .single-notes {
 	padding: 5px;
 	margin-bottom: 10px;
@@ -3359,6 +3364,7 @@ p {
 	margin-bottom: 20px;
 }
 
+.button_navv1 .edit_icon,
 .button_navv2 .edit_icon {
 	background-color: var(--primary-color);
 	border: 1px solid var(--primary-color);
@@ -3371,6 +3377,7 @@ p {
 	transition: all .3s linear;
 }
 
+.button_navv1 .edit_icon:hover,
 .button_navv2 .edit_icon:hover {
 	background-color: transparent;
 	color: var(--primary-color);
@@ -3443,7 +3450,153 @@ p {
 }
 
 /* profile page end */
+/* account & profile edit page  */
+.output-all-info .student-form {}
+.output-all-info .student-form .form-group {
+	margin-bottom: 20px;
+}
 
+.output-all-info .student-form label {
+	font-family: var(--poppins);
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--title-color);
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+
+.output-all-info .student-form .form-select,
+.output-all-info .student-form .form-control,
+.output-all-info .student-form input {
+	border-color: var(--title-color);
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+
+.output-all-info .student-form select:focus,
+.output-all-info .student-form input:focus {
+	box-shadow: unset;
+}
+.output-all-info .student-form .submit-btn {
+	padding: 12px 16px;
+	background-color: var(--primary-color);
+	border: 0;
+	border-radius: 5px;
+	font-family: var(--poppins);
+font-size: 16px;
+font-weight: 600; 
+color: #ffffff;
+text-transform: capitalize;
+transition: all .3s linear;
+}
+.output-all-info .student-form .submit-btn:hover{
+	background-color: var(--secondary-color);
+}
+/* account & profile edit page end  */
+
+/* contact section */
+.contact-section {
+	padding: 60px 0;
+	background-color: var(--bg-white-color);
+}
+ 
+
+.contact-form label {
+	font-family: var(--poppins);
+font-size: 16px;
+font-weight: 600; 
+color: var(--title-color);
+
+}
+
+.contact-form textarea::placeholder,
+.contact-form input::placeholder {
+	font-family: var(--poppins);
+	font-weight: 300;
+	color: #C4C4C4;
+	opacity: 60%;
+	font-size: 16px;
+}
+
+.contact-form textarea,
+.contact-form input {
+	border-color: var(--title-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.contact-form textarea:focus,
+.contact-form input:focus{
+	box-shadow: unset;
+	border-color: var(--title-color);
+}
+.contact-form textarea {
+	min-height: 160px;
+}
+ 
+
+.contact-form button.view-btn {
+	padding: 12px 16px;
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 5px;
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: capitalize;
+    transition: all .3s linear;
+} 
+.contact-form button.view-btn:hover {
+	background-color: var(--secondary-color);
+}
+.contact-info .email {
+    background-color: #fcfcfc;
+    padding: 14.5px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.60);
+    margin: 15px 0 32px;
+}
+
+.contact-info .phone i,
+.contact-info .email i {
+	color: #FF4A17;
+	margin-right: 8px;
+}
+
+.contact-info .email a {
+	color: #000000;
+	opacity: 60%;
+	font-weight: 400;
+
+}
+
+.contact-info .phone a {
+	color: #000000;
+	opacity: 60%;
+	font-weight: 700;
+
+}
+
+.contact-info .phone {
+	background-color: #fcfcfc;
+	padding: 14.5px 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.60);
+	margin: 0px 0 19px;
+} 
+
+.contact-info .location-map h5 {
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--title-color);
+	opacity: 60%;
+	margin-bottom: 12px;
+}
+
+.contact-info .location-map iframe {
+	width: 100% !important;
+	height: 160px !important;
+}
+
+/* contact section end */
 
 
 
@@ -3719,7 +3872,12 @@ p {
 .dark-mode .student-reviews .slider_controlar i:hover {
 	background: var(--dark-light);
 }
-
+.dark-mode .course-details-section .course-info .short-description *{
+	color: #ffffff;
+}
+.dark-mode .course-plan .what-will-get *{
+	color: #ffffff;
+}
 /* course details end */
 
 /* exam page  */
@@ -3908,13 +4066,16 @@ p {
 	background-color: var(--dark-light);
 	box-shadow: -407px 0 0 400px var(--dark-light);
 }
-.dark-mode .topic-section .topic-wrap .topic-main-title { 
-    background-color: var(--dark-light); 
-    border: 1px solid var(--dark-light);
+
+.dark-mode .topic-section .topic-wrap .topic-main-title {
+	background-color: var(--dark-light);
+	border: 1px solid var(--dark-light);
 }
+
 .dark-mode .topic-section .topic-wrap .notes-item-wrap {
-    border: 1px solid var(--dark-light); 
+	border: 1px solid var(--dark-light);
 }
+
 /* range page end */
 /* solution page */
 .dark-mode .solution-item .solution-bottom .explanation {
@@ -4028,11 +4189,13 @@ p {
 	color: #ffffff;
 }
 
+.dark-mode .button_navv1 .edit_icon,
 .dark-mode .button_navv2 .edit_icon {
 	background-color: var(--dark-light);
 	border: 1px solid var(--dark-light);
 }
 
+.dark-mode .button_navv1 .edit_icon:hover,
 .dark-mode .button_navv2 .edit_icon:hover {
 	color: #ffffff;
 	background-color: transparent;
@@ -4041,5 +4204,45 @@ p {
 .dark-mode .output-all-info .output-nav {
 	border-bottom: 1px solid var(--dark-light);
 }
+
 /* porfile page end*/
-/* Dark Mode Css End */ 
+/* profile edit page  */
+.dark-mode .output-all-info .student-form .form-select, 
+.dark-mode .output-all-info .student-form .form-control, 
+.dark-mode .output-all-info .student-form input {
+    border-color: var(--dark-light); 
+	color: #ffffff;
+    background-color:var(--bg-secondary-color);
+}
+.dark-mode .output-all-info .student-form .submit-btn { 
+    background-color: var(--dark-light); 
+}
+/* profile edit page end  */
+/* contact page */
+.dark-mode .contact-form textarea, .dark-mode .contact-form input {
+    border-color: var(--dark-light);
+	background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+	color: #ffffff;
+}
+.dark-mode .contact-form button.view-btn { 
+	background-color: var(--dark-light); 
+}
+.dark-mode .contact-form button.view-btn:hover { 
+	background-color: var(--secondary-color);
+}
+.dark-mode .contact-info .phone,
+.dark-mode .contact-info .email {
+	background-color: var(--primary-color); 
+    border-bottom: 1px solid var(--dark-light);  
+}
+.dark-mode .contact-info .phone a,
+.dark-mode .contact-info .email a {
+	color: #ffffff !important;
+}
+.dark-mode .contact-info .location-map iframe { 
+    mix-blend-mode: overlay;
+}
+/* contact page end */
+/* Dark Mode Css End */

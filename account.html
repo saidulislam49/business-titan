@@ -143,7 +143,7 @@
     </header>
     <main class="site-content">
 
-         
+
         <section class="result-section">
             <div class="container">
                 <div class="student_output-header">
@@ -168,125 +168,88 @@
                     </div>
                 </div>
                 <div class="output-all-info">
-                    <div class="output-nav">
-                        <span class="button_navv1 d-block d-md-none">
-                            <a class="edit_icon" href="account.html"><i
-                                    class="far fa-user"></i> <span class="btn-text">Account</span></a>
-                            <a class="edit_icon" href="profile-edit.html"><i class="far fa-edit"></i>
-                                <span class="btn-text">Edit profile</span></a>
-                        </span> 
-                        <ul class="nav nav-tabs output-tab" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                    data-bs-target="#personal" type="button" role="tab">Personal informations</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#ssc"
-                                    type="button" role="tab">Educational Information</button>
-                            </li>
-                        </ul>
-
-                        <span class="button_navv2 d-none d-md-block">
-                            <a class="edit_icon" href="account.html"><i
-                                    class="far fa-user"></i> <span class="btn-text">Account</span></a>
-                            <a class="edit_icon" href="profile-edit.html"><i class="far fa-edit"></i>
-                                <span class="btn-text">Edit profile</span></a>
-                        </span>
-
-                    </div>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="active_info-all">
-                                <div class="all_output-info on_info">
-                                    <ul>
-                                        <li><span class="first"> Name (English)</span><span class="left">MD: JAHIDUL
-                                                ISLAM</span></li>
-                                        <li><span class="first"> Name (Bengali)</span><span class="left">জাহিদুল
-                                                ইসলাম</span></li>
-                                        <li><span class="first"> Date of Birth</span><span
-                                                class="left">1999-01-18</span></li>
-                                        <li><span class="first"> Blood Group</span><span class="left">A+</span></li>
-                                        <li><span class="first"> Present Address</span><span class="left">Kathal bagan,
-                                                Bandarban Sadar, Bandarban, </span></li>
-                                        <li><span class="first"> Permanent Address</span><span class="left">Safa bazar,
-                                                Bandarban Sadar, Bandarban, </span></li>
-                                        <li><span class="first"> Gender</span><span class="left">male </span></li>
-                                    </ul>
+                    <div class="student-form">
+                        <form action="" method="post" enctype="multipart/form-data"> 
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="">Change Phone Number<sup
+                                                            class="text-danger">*</sup></label>
+                                                    <input type="text" name="phone" class="form-control number"
+                                                        placeholder="Phone" id="phone_number" required=""
+                                                        value="01815219260" onkeyup="phone_input()">
+                                                    <span class="invalid-feedback" style="display:inline;" role="alert">
+                                                        <strong id="phone_msg"></strong>
+                                                    </span>
+                                                </div>
+                                                <p class="alert alert-warning mt-2">Changing Phone Number is Subject to
+                                                    <strong>OTP</strong> Verification</p>
+                                            </div>
+                                            <div class="col-12" style="display: none;" id="phone_otp_div">
+                                                <div class="form-group">
+                                                    <label for="">OTP<sup class="text-danger">*</sup></label>
+                                                    <input type="text" name="phone_otp" class="form-control"
+                                                        placeholder="Phone OTP" id="phone_otp" required="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group text-center">
+                                                    <button type="button" class="submit-btn" id="send_otp_btn"
+                                                        onclick="send_otp()">Send OTP</button>
+                                                    <button type="submit" class="submit-btn" id="phone_save_btn"
+                                                        style="display: none;">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div> 
+                        </form>
+                        <hr>
+                        <form action="" method="post" enctype="multipart/form-data">  
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Old Password<sup class="text-danger">*</sup></label>
+                                            <input type="password" name="old_password" class="form-control"
+                                                placeholder="Old Password" id="old_password" required="">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="all_output-info on_info">
-                                    <ul>
-                                        <li><span class="first"> Father's Name</span><span class="left">জাহিদুল
-                                                ইসলাম</span></li>
-                                        <li><span class="first"> Father's Profession</span><span class="left">
-                                                Police</span></li>
-                                        <li><span class="first"> Father's Phone Number</span><span
-                                                class="left">01811160595</span></li>
-                                        <li><span class="first"> Mother's Name</span><span class="left">জাহিদুল
-                                                ইসলাম</span></li>
-                                        <li><span class="first"> Mother's Profession</span><span
-                                                class="left">Housewife</span></li>
-                                        <li><span class="first"> Mother's Phone Number</span><span class="left"></span>
-                                        </li>
-                                        <li><span class="first"> Social Media</span><span class="left"><a href="sdfsf"
-                                                    target="_blank">Click</a> </span></li>
-                                    </ul>
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="">New Password<sup class="text-danger">*</sup></label>
+                                            <input type="password" name="password" class="form-control"
+                                                placeholder="New Password" id="password" required="">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="ssc" role="tabpanel" aria-labelledby="contact-tab">
-
-                            <div class="active_info-all">
-
-                                <div class="all_output-info on_info">
-                                    <ul>
-                                        <li><span class="first"> Exam</span><span class="left">SSC</span></li>
-                                        <li><span class="first"> Board</span><span class="left">Dhaka</span></li>
-                                        <li><span class="first"> Passing Year</span><span class="left">2011</span></li>
-                                        <li><span class="first"> Roll</span><span class="left"> 454577</span></li>
-                                        <li><span class="first"> Registration Number</span><span
-                                                class="left">24575487657875</span></li>
-                                        <li><span class="first"> CGPA/GPA</span><span class="left">5</span></li>
-                                        <li>
-                                            <span class="first"> Institution Name</span>
-                                            <span class="left">
-                                                ADVENTIST INTERNATIONAL MISSION SCHOOL<br>
-                                                Barisal,
-                                                Banaripara
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="all_output-info on_info">
-                                    <ul>
-                                        <li><span class="first"> Exam</span><span class="left">HSC</span></li>
-                                        <li><span class="first"> Board</span><span class="left">Dhaka</span></li>
-                                        <li><span class="first"> Passing Year</span><span class="left">2014</span></li>
-                                        <li><span class="first"> Roll</span><span class="left"> 85787</span></li>
-                                        <li><span class="first"> Registration Number</span><span
-                                                class="left">47778787578575</span></li>
-                                        <li><span class="first"> CGPA/GPA</span><span class="left">5</span></li>
-                                        <li>
-                                            <span class="first"> Institution Name</span>
-                                            <span class="left">
-                                                ALIKADAM GOVT HIGH SCHOOL<br>
-                                                Bandarban,
-                                                Alikadam
-                                            </span>
-                                        </li>
-                                    </ul>
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Confirm Password<sup class="text-danger">*</sup></label>
+                                            <input type="password" name="password_confirmation" class="form-control"
+                                                placeholder="Confirm Password" id="password_confirmation" required="">
+                                        </div>
+                                    </div>
                                 </div>
 
-                            </div>
 
-                        </div>
+                                <div class="form-group text-center">
+                                    <button type="submit" class="submit-btn">Save</button>
+                                </div> 
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-        
 
 
-        
+
+
+
 
     </main>
     <!-- footer area -->
