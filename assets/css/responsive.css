@@ -851,4 +851,7 @@
 		margin-bottom: 30px;
 		margin-right: 0;
 	}
+	.login-card { 
+		width: 100%; 
+	}
 }

@@ -3452,6 +3452,7 @@ p {
 /* profile page end */
 /* account & profile edit page  */
 .output-all-info .student-form {}
+
 .output-all-info .student-form .form-group {
 	margin-bottom: 20px;
 }
@@ -3477,35 +3478,38 @@ p {
 .output-all-info .student-form input:focus {
 	box-shadow: unset;
 }
+
 .output-all-info .student-form .submit-btn {
 	padding: 12px 16px;
 	background-color: var(--primary-color);
 	border: 0;
 	border-radius: 5px;
 	font-family: var(--poppins);
-font-size: 16px;
-font-weight: 600; 
-color: #ffffff;
-text-transform: capitalize;
-transition: all .3s linear;
+	font-size: 16px;
+	font-weight: 600;
+	color: #ffffff;
+	text-transform: capitalize;
+	transition: all .3s linear;
 }
-.output-all-info .student-form .submit-btn:hover{
+
+.output-all-info .student-form .submit-btn:hover {
 	background-color: var(--secondary-color);
 }
+
 /* account & profile edit page end  */
 
-/* contact section */
+/* contact page */
 .contact-section {
 	padding: 60px 0;
 	background-color: var(--bg-white-color);
 }
- 
+
 
 .contact-form label {
 	font-family: var(--poppins);
-font-size: 16px;
-font-weight: 600; 
-color: var(--title-color);
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--title-color);
 
 }
 
@@ -3521,39 +3525,43 @@ color: var(--title-color);
 .contact-form textarea,
 .contact-form input {
 	border-color: var(--title-color);
-    border-radius: 5px;
-    padding: 10px 15px;
+	border-radius: 5px;
+	padding: 10px 15px;
 }
+
 .contact-form textarea:focus,
-.contact-form input:focus{
+.contact-form input:focus {
 	box-shadow: unset;
 	border-color: var(--title-color);
 }
+
 .contact-form textarea {
 	min-height: 160px;
 }
- 
+
 
 .contact-form button.view-btn {
 	padding: 12px 16px;
-    background-color: var(--primary-color);
-    border: 0;
-    border-radius: 5px;
-    font-family: var(--poppins);
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
-    text-transform: capitalize;
-    transition: all .3s linear;
-} 
+	background-color: var(--primary-color);
+	border: 0;
+	border-radius: 5px;
+	font-family: var(--poppins);
+	font-size: 16px;
+	font-weight: 600;
+	color: #ffffff;
+	text-transform: capitalize;
+	transition: all .3s linear;
+}
+
 .contact-form button.view-btn:hover {
 	background-color: var(--secondary-color);
 }
+
 .contact-info .email {
-    background-color: #fcfcfc;
-    padding: 14.5px 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.60);
-    margin: 15px 0 32px;
+	background-color: #fcfcfc;
+	padding: 14.5px 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.60);
+	margin: 15px 0 32px;
 }
 
 .contact-info .phone i,
@@ -3581,7 +3589,7 @@ color: var(--title-color);
 	padding: 14.5px 10px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.60);
 	margin: 0px 0 19px;
-} 
+}
 
 .contact-info .location-map h5 {
 	font-size: 16px;
@@ -3596,7 +3604,138 @@ color: var(--title-color);
 	height: 160px !important;
 }
 
-/* contact section end */
+/* contact page end */
+/* login page */
+.login-section {
+	padding: 60px 0;
+	background-color: var(--bg-white-color);
+}
+
+.custom-card {
+	box-shadow: 0px 4px 37px 0px #00000012;
+	border-radius: 8px;
+	border: 1px solid var(--ddd);
+	margin: auto;
+}
+.login-card{
+	width: 425px;
+}
+.custom-card .custom-header {
+	padding: 18px 0;
+	background-color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	text-align: center;
+	border-radius: 8px 8px 0 0;
+}
+
+.custom-card .custom-header .header-title {
+	font-family: var(--poppins);
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--text-white-color);
+	text-transform: capitalize;
+}
+
+.custom-card .custom-body {
+	padding: 24px;
+}
+
+.custom-card .custom-body .title {
+	font-family: var(--passion);
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 30px;
+	color: var(--title-color);
+} 
+
+.custom-card .custom-body form input.custom-card-input {
+	border: 1px solid var(--title-color);
+	border-radius: 5px;
+	padding: 10px 15px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.custom-card .custom-body form label{
+	font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--title-color);
+	margin-bottom: 5px;
+}
+
+.custom-card .custom-body form input.custom-card-input::placeholder {
+	font-family: var(--poppins);
+	font-size: 16px;
+	font-weight: 300;
+	color: #C4C4C4;
+}
+
+.custom-card .custom-body .custom-btn {
+	padding: 12px 16px;
+	background-color: var(--primary-color);
+	border: 0;
+	border-radius: 5px;
+	font-family: var(--poppins);
+	font-size: 16px;
+	font-weight: 600;
+	color: #ffffff;
+	text-transform: capitalize;
+	transition: all .3s linear;
+	width: 100%;
+}
+.custom-card .custom-body .custom-btn:hover {
+	background-color: var(--secondary-color);
+}
+.custom-card .custom-card-table{
+	margin-bottom: 20px;
+}
+.custom-card .custom-card-table table tr th,
+.custom-card .custom-card-table table tr td{
+	text-align: center;
+}
+/* login page end */
+/* payment page */
+.payment-section {
+	padding: 0 0 60px;
+	background-color: var(--bg-white-color);
+}
+
+.payment-section .payment-card .payment-title{
+	font-family: var(--poppins);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+.payment-card .payment-options{
+	margin-bottom: 40px;
+}
+.payment-card .payment-options .payment-item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.payment-card .payment-options .payment-item .payment-icon{
+	width: 40px;
+	height: 40px;
+}
+.payment-card .payment-options .payment-item .payment-icon img{
+	width: 100%;
+}
+
+.payment-card .form-check-input:focus,
+.payment-card .payment-options .payment-item .form-check-input:focus{
+	box-shadow: unset;
+}
+.payment-card .form-check-input:checked,
+.payment-card .payment-options .payment-item .form-check-input:checked {
+	background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* payment page end */
 
 
 
@@ -3872,12 +4011,15 @@ color: var(--title-color);
 .dark-mode .student-reviews .slider_controlar i:hover {
 	background: var(--dark-light);
 }
-.dark-mode .course-details-section .course-info .short-description *{
+
+.dark-mode .course-details-section .course-info .short-description * {
 	color: #ffffff;
 }
-.dark-mode .course-plan .what-will-get *{
+
+.dark-mode .course-plan .what-will-get * {
 	color: #ffffff;
 }
+
 /* course details end */
 
 /* exam page  */
@@ -4207,42 +4349,84 @@ color: var(--title-color);
 
 /* porfile page end*/
 /* profile edit page  */
-.dark-mode .output-all-info .student-form .form-select, 
-.dark-mode .output-all-info .student-form .form-control, 
+.dark-mode .output-all-info .student-form .form-select,
+.dark-mode .output-all-info .student-form .form-control,
 .dark-mode .output-all-info .student-form input {
-    border-color: var(--dark-light); 
+	border-color: var(--dark-light);
 	color: #ffffff;
-    background-color:var(--bg-secondary-color);
+	background-color: var(--bg-secondary-color);
 }
-.dark-mode .output-all-info .student-form .submit-btn { 
-    background-color: var(--dark-light); 
+
+.dark-mode .output-all-info .student-form .submit-btn {
+	background-color: var(--dark-light);
 }
+
 /* profile edit page end  */
 /* contact page */
-.dark-mode .contact-form textarea, .dark-mode .contact-form input {
-    border-color: var(--dark-light);
+.dark-mode .contact-form textarea,
+.dark-mode .contact-form input {
+	border-color: var(--dark-light);
 	background-color: var(--primary-color);
-    border-radius: 5px;
-    padding: 10px 15px;
+	border-radius: 5px;
+	padding: 10px 15px;
 	color: #ffffff;
 }
-.dark-mode .contact-form button.view-btn { 
-	background-color: var(--dark-light); 
+
+.dark-mode .contact-form button.view-btn {
+	background-color: var(--dark-light);
 }
-.dark-mode .contact-form button.view-btn:hover { 
+
+.dark-mode .contact-form button.view-btn:hover {
 	background-color: var(--secondary-color);
 }
+
 .dark-mode .contact-info .phone,
 .dark-mode .contact-info .email {
-	background-color: var(--primary-color); 
-    border-bottom: 1px solid var(--dark-light);  
+	background-color: var(--primary-color);
+	border-bottom: 1px solid var(--dark-light);
 }
+
 .dark-mode .contact-info .phone a,
 .dark-mode .contact-info .email a {
 	color: #ffffff !important;
 }
-.dark-mode .contact-info .location-map iframe { 
-    mix-blend-mode: overlay;
+
+.dark-mode .contact-info .location-map iframe {
+	mix-blend-mode: overlay;
 }
+
 /* contact page end */
+/* login & payment page */
+.dark-mode .custom-card {
+	background-color: var(--primary-color);
+}
+.dark-mode .custom-card .custom-header { 
+    background-color: var(--dark-light);
+    border: 1px solid var(--dark-light); 
+}
+.dark-mode .custom-card .custom-body .custom-btn { 
+	background-color: var(--dark-light); 
+}
+.dark-mode .custom-card .custom-body .custom-btn:hover{
+	background-color: var(--secondary-color);
+}
+.dark-mode .custom-card { 
+    border: 1px solid var(--dark-light); 
+}
+.dark-mode .custom-card .custom-body form input.custom-card-input {
+    border: 1px solid var(--dark-light); 
+	background-color: var(--bg-secondary);
+	color: #ffffff;
+}
+.dark-mode .custom-card-table table tr{
+	border-color: var(--dark-light);
+}
+.dark-mode .custom-card-table table tr th,
+.dark-mode .custom-card-table table tr td{
+	color: #ffffff;
+}
+.dark-mode .payment-card .payment-options .payment-item label{
+	color: #ffffff;
+}
+/* login & payment page end */
 /* Dark Mode Css End */
