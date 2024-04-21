@@ -103,7 +103,7 @@
 
 @media all and (max-width:991px) {
 	.header-bottom {
-		padding: 10px 0;
+		padding: 0px 0;
 	}
 	.mobile-logo a img {
 		width: 100px;
@@ -747,11 +747,14 @@
 	.result-section { 
 		padding: 20px 0;
 	}
+	.callCenter-section .call-detail-wrap { 
+		background-size: 70%; 
+	}
 }
 
 @media all and (max-width:520px) {
 	.desktop_logo img {
-		width: 80px;
+		width: 75px;
 	}
 	.menu-buttons { 
 		column-gap: 10px;
@@ -776,14 +779,32 @@
 		display: flex;
 		padding: 10px;
 	}
-	.hero-left .home-menu .menu-item {   
+	.hero-left .home-menu .menu-item {
 		padding: 6px;
-		margin-bottom: 18px;
-		min-height: 145px;
-		width: 110px; 
+		margin-bottom: 15px;
+		min-height: 90px;
+		width: 80px;
+	}
+	.hero-left .home-menu .menu-item .icon {
+		min-height: 45px;
+	}
+	.hero-left .home-menu .menu-item .icon img {
+		width: 35px;
+	}
+	.hero-left .home-menu .menu-item .menu-title { 
+		font-size: 12px; 
 	}
 	.hero-left .home-menu {
 		margin-top: 35px;
+	}
+	.hero-right {
+		padding: 0 30px 30px;
+	}
+	.hero-left .title {
+		font-size: 40px; 
+	}
+	.hero-left .description { 
+		font-size: 14px; 
 	}
 	.speciality-section .section-title {
 		width: 100%;
@@ -795,6 +816,22 @@
 	.mentor-wrapper .slider_controlar i.next {
 		right: 35%;
 	}
+	.mentor-wrapper .mentors .mentor-item .left .image {
+		width: 94px;
+		height: 107px; 
+	}
+	.mentor-wrapper .mentors .mentor-item .right .name { 
+		font-size: 20px; 
+	}
+	.mentor-wrapper .mentors .mentor-item .right .designation { 
+		font-size: 15px; 
+	}
+	.menu-buttons .language select { 
+		padding: 5px 5px; 
+	}
+	.menu-buttons .auth-link .login {
+		padding: 5px 5px; 
+	}
 	.menu-buttons .phone,
 	.menu-buttons .auth-link .login{
 		font-size: 12px;
@@ -803,7 +840,11 @@
 		font-size: 12px;
 	}
 	.menu-buttons .mode img {
-		width: 25px;
+		width: 23px;
+	}
+	.mobile-toggle a.mobile-menu-open {
+		color: var(--black-color); 
+		font-size: 23px; 
 	}
 
 	.student-reviews .slider_controlar i.prev{
@@ -853,5 +894,8 @@
 	}
 	.login-card { 
 		width: 100%; 
+	}
+	.hero-left .home-menu .home-menu-wrapper { 
+		column-gap: 15px; 
 	}
 }
