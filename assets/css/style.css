@@ -473,6 +473,7 @@ p {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 10px 0;
 }
 
 .mobile-toggle a.mobile-menu-open {
@@ -861,8 +862,7 @@ p {
 }
 
 .mentor-wrapper .mentors .slick-list {
-	margin: 0 20px;
-	background: #ffffff;
+	margin: 0 20px; 
 	border-radius: 16px;
 	box-shadow: 0px 0px 48px 0px #0000001A;
 }
@@ -3822,6 +3822,9 @@ p {
 
 
 /* Dark Mode Css  */
+.dark-mode .site-content {
+	background-color: var(--bg-secondary);
+}
 .dark-mode .menu-buttons .language select {
 	border: 1px solid var(--transparent);
 }

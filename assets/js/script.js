@@ -129,7 +129,10 @@
 	var heroRightImg = document.getElementById('hero_right_img');
 	var aboutUsImage = document.getElementById('aboutUsImage');
 	var themeStorage = localStorage.getItem('theme');
-	var headerLogo = document.getElementById('header-logo');
+	var headerLogos = document.querySelectorAll('.header-logo');
+	headerLogos.forEach(headerLogo =>{
+		console.log(headerLogo);
+	})
 	if (themeStorage) {
 		document.body.classList.add(themeStorage);
 	}
@@ -142,7 +145,9 @@
 				// sun moon icon
 				modeIcon.src = 'assets/img/sun.png';
 				// logo
-				headerLogo.src = 'assets/img/light-logo.png';
+				headerLogos.forEach(headerLogo => {
+					headerLogo.src = 'assets/img/light-logo.png';
+				});
 				// about image
 				if (aboutUsImage) {
 					aboutUsImage.src = 'assets/img/about-us/about-us-dark.png';
@@ -160,7 +165,9 @@
 				localStorage.removeItem('theme', 'dark-mode');
 				modeIcon.src = 'assets/img/moon.png';
 				// logo
-				headerLogo.src = 'assets/img/dark-logo.png';
+				headerLogos.forEach(headerLogo => {
+					headerLogo.src = 'assets/img/dark-logo.png';
+				});
 				// about image
 				if (aboutUsImage) {
 					aboutUsImage.src = 'assets/img/about-us/Frame.png';
@@ -181,8 +188,10 @@
 			localStorage.setItem('theme', 'dark-mode');
 			// sun moon icon
 			modeIcon.src = 'assets/img/sun.png';
-			// logo
-			headerLogo.src = 'assets/img/light-logo.png';
+			// logo 
+			headerLogos.forEach(headerLogo => {
+                headerLogo.src = 'assets/img/light-logo.png';
+            });
 
 			// about image
 			if (aboutUsImage) {
@@ -200,7 +209,9 @@
 			localStorage.removeItem('theme', 'dark-mode');
 			modeIcon.src = 'assets/img/moon.png';
 			// logo
-			headerLogo.src = 'assets/img/dark-logo.png';
+			headerLogos.forEach(headerLogo => {
+                headerLogo.src = 'assets/img/dark-logo.png';
+            });
 			// about image
 			if (aboutUsImage) {
 				aboutUsImage.src = 'assets/img/about-us/Frame.png';
