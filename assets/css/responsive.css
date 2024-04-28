@@ -9,36 +9,44 @@
 	.exam-card-2 .exam-botton {
 		gap: 5px;
 	}
-	.exam-card-2 .exam-botton a { 
-		font-size: 14px; 
-		padding: 7px; 
+
+	.exam-card-2 .exam-botton a {
+		font-size: 14px;
+		padding: 7px;
 	}
-	
+
 }
+
 @media only screen and (max-width: 1200px) {
-	.slider_controlar i.prev::after { 
-		width: 150px; 
+	.slider_controlar i.prev::after {
+		width: 150px;
 	}
-	.slider_controlar i.next::after { 
-		width: 150px; 
+
+	.slider_controlar i.next::after {
+		width: 150px;
 	}
-	.exam-botton { 
-		gap: 5px; 
+
+	.exam-botton {
+		gap: 5px;
 	}
-	.exam-card .exam-botton a { 
-		font-size: 14px; 
-		padding: 7px; 
+
+	.exam-card .exam-botton a {
+		font-size: 14px;
+		padding: 7px;
 	}
-	
+
 }
-@media only screen and (min-width:1200px){
+
+@media only screen and (min-width:1200px) {
 	.course-details-section .sticky {
 		position: sticky;
 		top: 80px;
 	}
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
-	 /* Admission-Course */
+
+	/* Admission-Course */
 	.banner-item {
 		padding: 55px 0;
 	}
@@ -56,48 +64,57 @@
 		height: 47px;
 		font-size: 20px;
 	}
+
 	/* ====Exam-page-Start===== */
 	.upc-nxt-exm {
 		margin-bottom: 50px;
-	} 
+	}
+
 	/* ====Exam-page-End======= */
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) { 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.header-horizontal-menu .menu-content li a {
 		padding: 0 10px;
 		font-weight: 400;
 		font-size: 16px;
-	} 
+	}
+
 	.social-buttons {
 		display: flex;
 		justify-content: center;
 		column-gap: 24px;
 		margin-top: 24px;
 	}
-	.social-buttons .button-item { 
+
+	.social-buttons .button-item {
 		flex-basis: 50%;
 	}
-	.social-buttons .button-item.youtube { 
+
+	.social-buttons .button-item.youtube {
 		margin-bottom: 0px;
 	}
 }
 
 @media only screen and (min-width: 767px) and (max-width: 991px) {
-	.slider_controlar i.prev::after { 
-		width: 100px; 
+	.slider_controlar i.prev::after {
+		width: 100px;
 	}
-	.slider_controlar i.next::after { 
-		width: 100px; 
+
+	.slider_controlar i.next::after {
+		width: 100px;
 	}
+
 	/* ====Exam-page-Start===== */
 	.upc-nxt-exm {
 		margin-bottom: 50px;
 	}
+
 	.exam-card .exam-botton a {
 		font-size: 14px;
 		padding: 10px;
 	}
+
 	/* ====Exam-page-End======= */
 }
 
@@ -105,46 +122,61 @@
 	.header-bottom {
 		padding: 0px 0;
 	}
+
 	.mobile-logo a img {
 		width: 100px;
 		margin: 0 auto;
 		display: flex;
 		padding: 10px;
-	} 	
+	}
+
 	.hero-left {
 		text-align: center;
 	}
-	.hero-left .home-menu .home-menu-wrapper { 
+
+	.hero-left .home-menu .home-menu-wrapper {
 		justify-content: center;
 	}
+
 	.mentor-wrapper .mentors {
 		padding: 0;
 	}
+
 	.mentor-section {
 		padding: 60px 0 120px;
 	}
+
 	.mentor-wrapper .slider_controlar i {
 		top: 120%;
 	}
+
 	.mentor-wrapper .slider_controlar i.prev {
 		left: 42%;
 	}
+
 	.mentor-wrapper .slider_controlar i.next {
 		right: 42%;
-	} 
+	}
+
 	.callCenter-section .call-detail-wrap .call-text {
 		width: 100%;
 	}
-	.social-buttons { 
+
+	.social-buttons {
 		margin-top: 24px;
 	}
-	.page-header { 
+
+	.page-header {
 		padding: 50px 0;
 	}
-	.switcher-section .icon-area .login::after { 
-		width: 96%; 
+
+	.switcher-section .icon-area .login::after {
+		width: 96%;
 	}
-	.switcher-section .title-area .order-confirmation, .switcher-section .title-area .login, .switcher-section .title-area .payment {
+
+	.switcher-section .title-area .order-confirmation,
+	.switcher-section .title-area .login,
+	.switcher-section .title-area .payment {
 		flex-basis: 25%;
 	}
 
@@ -225,81 +257,122 @@
 	.upc-nxt-exm {
 		margin-bottom: 50px;
 	}
+
 	/* ====Exam-page-End======= */
 	/* =====Leader-Board-Start==== */
-	.leader-board{
+	.leader-board {
 		padding: 55px 0;
 	}
 
 	/* profile page */
-	.output-tab.nav-tabs .nav-link { 
+	.output-tab.nav-tabs .nav-link {
 		padding: 0.5rem 5px 8px 8px;
 	}
-	.button_navv2 .edit_icon { 
-		padding: 5px 10px; 
+
+	.button_navv2 .edit_icon {
+		padding: 5px 10px;
 	}
-	 
+
 }
 
 @media (max-width: 767px) {
-	 
+
 	h2 {
 		font-size: 30px;
 	}
 
 	.pt-20 {
 		padding-top: 10px;
-	} 
-	.slider_controlar { 
+	}
+
+	.menu-buttons .language select.lan_desktop {
+		display: none;
+	}
+	.menu-buttons .language select.lan_mobile {
+		display: block;
+	}
+	.menu-buttons .phone a{
+		display: none;
+	}
+	.menu-buttons .phone a.phone_mobile{
+		display: block;
+	}
+	.menu-buttons .phone a i {
+		margin:0 3px;
+	}
+	.menu-buttons .auth-link .login{
+		display: none;
+	}
+	.menu-buttons .auth-link .login_mobile{
+		display: block;
+	}
+	.menu-buttons .auth-link i{
+		margin: 0 3px;
+	}
+	.slider_controlar {
 		margin-bottom: 20px;
-	}	 
+	}
+
 	.footer_section .widget_title {
-		font-size: 20px; 
+		font-size: 20px;
 		margin-bottom: 25px;
 		margin-top: 30px;
 	}
-	.footer-widget-1 p { 
+
+	.footer-widget-1 p {
 		margin: 32px 0px 32px 0;
 	}
+
 	.footer_section {
 		padding: 50px 0 30px;
 	}
-	.hero-section { 
-		padding: 30px 0; 
-	}
-	.speciality-section { 
-		padding: 40px 0; 
+
+	.hero-section {
+		padding: 30px 0;
 	}
 
-	.mentor-wrapper .mentors .mentor-item { 
+	.speciality-section {
+		padding: 40px 0;
+	}
+
+	.mentor-wrapper .mentors .mentor-item {
 		flex-direction: column;
 		justify-content: center;
 	}
+
 	.mentor-wrapper .mentors .mentor-item .right {
 		text-align: center;
 		margin-top: 20px;
 	}
+
 	.mentor-wrapper .mentors .mentor-item .left {
 		margin-right: 0;
 	}
+
 	.mentor-wrapper .slider_controlar i {
 		top: 110%;
 	}
+
 	.mentor-wrapper .slider_controlar i.prev {
 		left: 40%;
 	}
+
 	.mentor-wrapper .slider_controlar i.next {
 		right: 40%;
 	}
-	.callCenter-section .call-detail-wrap { 
+
+	.callCenter-section .call-detail-wrap {
 		padding: 30px 35px;
 	}
+
 	.course-details-section {
 		padding: 40px 0;
 	}
+
 	.switcher-section .icon-area .login::after {
 		width: 95%;
 	}
+
 	.switcher-section {
 		padding: 40px 0;
 	}
@@ -409,159 +482,203 @@
 	.upc-nxt-exm {
 		margin-bottom: 45px;
 	}
-	.exam-botton { 
-		gap: 10px; 
+
+	.exam-botton {
+		gap: 10px;
 	}
+
 	/* ====Exam-page-End======= */
 	/* =====Leader-Board-Start==== */
-	.leader-board{
+	.leader-board {
 		padding: 50px 0;
 	}
+
 	.leader-input-wrap input {
 		padding: 20px;
 		padding-right: 60px;
 	}
-	.result-section { 
+
+	.result-section {
 		padding: 40px 0;
 	}
 
 	/* profile page */
-	.active_info-all { 
+	.active_info-all {
 		flex-direction: column;
 	}
+
 	.on_info {
-		width: 100%; 
+		width: 100%;
 	}
-	.output-all-info .output-nav { 
-		align-items: flex-start; 
+
+	.output-all-info .output-nav {
+		align-items: flex-start;
 		flex-direction: column;
 		row-gap: 8px;
 	}
 }
 
-@media all and (max-width:575px) { 
-	.slider_controlar i.prev::after { 
-		width: 100px; 
+@media all and (max-width:575px) {
+	.slider_controlar i.prev::after {
+		width: 100px;
 	}
-	.slider_controlar i.next::after { 
-		width: 100px; 
-	} 
-	.hero-left .title { 
-		font-size: 55px; 
+
+	.slider_controlar i.next::after {
+		width: 100px;
+	}
+
+	.hero-left .title {
+		font-size: 55px;
 		line-height: 50px;
 	}
+
 	.speciality-section .section-title {
 		width: 460px;
-		margin: 0px auto 40px; 
+		margin: 0px auto 40px;
 	}
-	.specialities .speciality-item { 
+
+	.specialities .speciality-item {
 		margin-bottom: 12px;
 	}
-	.mentor-section .section-title { 
+
+	.mentor-section .section-title {
 		margin-bottom: 30px;
 	}
+
 	.mentor-section {
 		padding: 40px 0 110px;
 	}
+
 	.callCenter-section {
-		padding: 40px 0; 
+		padding: 40px 0;
 	}
+
 	.social-buttons {
 		margin-top: 15px;
 	}
-	.social-buttons .button-item.youtube { 
+
+	.social-buttons .button-item.youtube {
 		margin-bottom: 15px;
 	}
-	.social-buttons .button-item .item-text .join-btn { 
-		font-size: 14px; 
+
+	.social-buttons .button-item .item-text .join-btn {
+		font-size: 14px;
 	}
-	.social-buttons .button-item { 
+
+	.social-buttons .button-item {
 		padding: 25px;
 	}
+
 	.page-header {
 		padding: 30px 0;
 	}
-	.page-header .page-title { 
-		font-size: 25px; 
+
+	.page-header .page-title {
+		font-size: 25px;
 	}
-	.course-sidebar .course-info { 
+
+	.course-sidebar .course-info {
 		flex-direction: column;
 		row-gap: 5px;
 	}
-	.course-sidebar .course-thumbnail { 
+
+	.course-sidebar .course-thumbnail {
 		margin-bottom: 20px;
 	}
+
 	.course-sidebar .enroll-button {
 		margin: 20px 0;
 	}
-	.course-sidebar .details-call { 
+
+	.course-sidebar .details-call {
 		margin-bottom: 0px;
 	}
+
 	.student-reviews {
-		padding: 0; 
+		padding: 0;
 	}
-	.student-reviews .slider_controlar { 
+
+	.student-reviews .slider_controlar {
 		padding: 20px 0;
-	} 
-	.student-reviews .slider_controlar i { 
-		top: 0%; 
 	}
-	.student-reviews .slider_controlar i.prev{
+
+	.student-reviews .slider_controlar i {
+		top: 0%;
+	}
+
+	.student-reviews .slider_controlar i.prev {
 		left: 44%;
 		transform: translateX(-50%);
 	}
+
 	.student-reviews .slider_controlar i.next {
 		right: 44%;
 		transform: translateX(50%);
 	}
-	.page-header .content-area .duration-mark { 
+
+	.page-header .content-area .duration-mark {
 		gap: 15px;
 		margin-top: 24px;
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.timer-area .timer-buttons .button {
-		padding: 10px; 
+		padding: 10px;
 	}
-	.question-item { 
+
+	.question-item {
 		padding: 20px;
 		margin-bottom: 15px;
 	}
-	.question-item .question-options .option-item label { 
+
+	.question-item .question-options .option-item label {
 		padding: 8px;
 		margin: 0px 0px -10px 0px;
 	}
+
 	.question-btn .submit-btn {
-		padding: 12px; 
+		padding: 12px;
 	}
-	.solution-item { 
-		padding: 20px; 
+
+	.solution-item {
+		padding: 20px;
 	}
+
 	.solution-item .solution-options .option-item {
-		padding: 10px; 
+		padding: 10px;
 		margin-bottom: 15px;
 	}
-	.solution-item .solution-bottom .wrong, .solution-item .solution-bottom .correct {
-		padding: 6px; 
+
+	.solution-item .solution-bottom .wrong,
+	.solution-item .solution-bottom .correct {
+		padding: 6px;
 	}
+
 	.solution-btn .submit-btn {
-		padding: 12px; 
-	} 
+		padding: 12px;
+	}
+
 	.newsroom-section {
 		padding: 40px 0;
 	}
+
 	.single-news {
-		padding: 20px; 
+		padding: 20px;
 	}
+
 	.newsroom-bottom .news-btns-count {
-		padding: 15px 0; 	
+		padding: 15px 0;
 	}
-	.newsroom-bottom .news-btns { 
+
+	.newsroom-bottom .news-btns {
 		padding: 10px 0;
 	}
-	.newsroom-bottom .news-comment-box textarea { 
-		padding: 15px 10px 0px; 
+
+	.newsroom-bottom .news-comment-box textarea {
+		padding: 15px 10px 0px;
 	}
+
 	/* Admission-Course */
 	.banner-item {
 		padding: 35px 0;
@@ -592,7 +709,7 @@
 		height: 38px;
 		font-size: 17px;
 	}
-	
+
 
 	/* ===Notes-page-Start== */
 	.notes {
@@ -709,46 +826,58 @@
 	.exam-card .total-marks {
 		margin: 20px 0;
 	}
+
 	/* ====Exam-page-End======= */
 
 	/* =====Leader-Board-Start==== */
-	.leader-board{
+	.leader-board {
 		padding: 40px 0;
 	}
+
 	.leader-input-wrap input {
 		padding: 15px;
 		padding-right: 57px;
 	}
+
 	.leader-input-wrap .input-text {
 		padding: 6px 21px 6px 14px;
 	}
+
 	.board-profile {
 		margin-top: 15px;
 		padding: 8px;
 	}
+
 	.board-profile .profile-image {
 		margin: 0 8px;
 	}
+
 	.profile-discription h3 {
 		margin-bottom: 8px;
 	}
-	.profile-discription p{
+
+	.profile-discription p {
 		font-size: 14px;
 	}
+
 	.board-profile .right-content .mark {
 		padding: 5px 8px;
 	}
+
 	.course-dashboard-wrap .course-dashboard-header {
-		padding: 20px 20px; 
+		padding: 20px 20px;
 	}
+
 	.course-dashboard-wrap {
 		padding: 30px 0 30px;
 	}
-	.result-section { 
+
+	.result-section {
 		padding: 20px 0;
 	}
-	.callCenter-section .call-detail-wrap { 
-		background-size: 70%; 
+
+	.callCenter-section .call-detail-wrap {
+		background-size: 70%;
 	}
 }
 
@@ -756,19 +885,23 @@
 	.desktop_logo img {
 		width: 75px;
 	}
-	.menu-buttons { 
+
+	.menu-buttons {
 		column-gap: 10px;
 	}
+
 	.menu-buttons .mode img {
-		width: 30px; 
+		width: 30px;
 	}
-	.course-dashboard-wrap .swithcer .prev, .course-dashboard-wrap .swithcer .next { 
-		font-size: 15px; 
+
+	.course-dashboard-wrap .swithcer .prev,
+	.course-dashboard-wrap .swithcer .next {
+		font-size: 15px;
 	}
 }
 
 @media all and (max-width:490px) {
- 
+
 	.mobile-logo a img {
 		width: 120px;
 	}
@@ -779,88 +912,126 @@
 		display: flex;
 		padding: 10px;
 	}
+
 	.hero-left .home-menu .menu-item {
 		padding: 6px;
 		margin-bottom: 15px;
 		min-height: 90px;
 		width: 80px;
 	}
+
 	.hero-left .home-menu .menu-item .icon {
 		min-height: 45px;
 	}
+
 	.hero-left .home-menu .menu-item .icon img {
 		width: 35px;
 	}
-	.hero-left .home-menu .menu-item .menu-title { 
-		font-size: 12px; 
+
+	.hero-left .home-menu .menu-item .menu-title {
+		font-size: 12px;
 	}
+
 	.hero-left .home-menu {
 		margin-top: 35px;
 	}
+
 	.hero-right {
 		padding: 0 30px 30px;
 	}
+
 	.hero-left .title {
-		font-size: 40px; 
+		font-size: 40px;
 	}
-	.hero-left .description { 
-		font-size: 14px; 
+
+	.hero-left .description {
+		font-size: 14px;
 	}
+
 	.speciality-section .section-title {
 		width: 100%;
-		padding: 0 10px; 
+		padding: 0 10px;
 	}
+
 	.mentor-wrapper .slider_controlar i.prev {
 		left: 35%;
 	}
+
 	.mentor-wrapper .slider_controlar i.next {
 		right: 35%;
 	}
+
 	.mentor-wrapper .mentors .mentor-item .left .image {
 		width: 94px;
-		height: 107px; 
+		height: 107px;
 	}
-	.mentor-wrapper .mentors .mentor-item .right .name { 
-		font-size: 20px; 
+
+	.mentor-wrapper .mentors .mentor-item .right .name {
+		font-size: 20px;
 	}
-	.mentor-wrapper .mentors .mentor-item .right .designation { 
-		font-size: 15px; 
+
+	.mentor-wrapper .mentors .mentor-item .right .designation {
+		font-size: 15px;
 	}
-	.menu-buttons .language select { 
-		padding: 5px 5px; 
+
+	.menu-buttons .language select {
+		padding: 5px 5px;
+	}
+
+	.menu-buttons .auth-link .login_mobile i{
+		font-size: 12px;
+	}
+	.menu-buttons .auth-link .login_mobile{
+		padding: 0px 5px;
 	}
 	.menu-buttons .auth-link .login {
-		padding: 4px 5px; 
+		padding: 4px 5px;
 	}
+
 	.menu-buttons .phone,
-	.menu-buttons .auth-link .login{
+	.menu-buttons .auth-link .login {
 		font-size: 12px;
 	}
-	.menu-buttons .language select{
+
+	.menu-buttons .language select {
 		font-size: 12px;
 	}
+	.menu-buttons .phone a{
+		padding: 3px 5px;
+	}
+	.menu-buttons .dashboard .user_name {
+		padding: 3px 5px;
+		font-size: 12px;
+	}
+
 	.menu-buttons .mode img {
 		width: 23px;
 	}
+	.mobile-toggle { 
+		padding: 5px 0;
+	}
 	.mobile-toggle a.mobile-menu-open {
-		color: var(--black-color); 
-		font-size: 23px; 
+		color: var(--black-color);
+		font-size: 23px;
 	}
 
-	.student-reviews .slider_controlar i.prev{
-		left: 43%; 
+	.student-reviews .slider_controlar i.prev {
+		left: 43%;
 	}
+
 	.student-reviews .slider_controlar i.next {
-		right: 43%; 
+		right: 43%;
 	}
+
 	.switcher-section .icon-area .login::after {
 		width: 93%;
 	}
-	.switcher-section .title-area h4 { 
+
+	.switcher-section .title-area h4 {
 		font-weight: 500;
-		font-size: 14px; 
+		font-size: 14px;
 	}
-	
+
 	/* ====Exam-page-Start===== */
 	.exam .form-option {
 		display: block;
@@ -879,23 +1050,28 @@
 		padding: 10px;
 		font-size: 14px;
 	}
+
 	/* ====Exam-page-End===== */
 	/* =====Leader-Board-Start==== */
-	.board-profile{
+	.board-profile {
 		width: 500px;
 	}
-	.student_output-header { 
-		display: block; 
+
+	.student_output-header {
+		display: block;
 		text-align: center;
 	}
-	.student_output-header .student_output-img {  
+
+	.student_output-header .student_output-img {
 		margin-bottom: 30px;
 		margin-right: 0;
 	}
-	.login-card { 
-		width: 100%; 
+
+	.login-card {
+		width: 100%;
 	}
-	.hero-left .home-menu .home-menu-wrapper { 
-		column-gap: 15px; 
+
+	.hero-left .home-menu .home-menu-wrapper {
+		column-gap: 15px;
 	}
 }

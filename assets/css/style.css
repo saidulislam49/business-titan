@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap');
 
 :root {
 	--passion: "Passion One", sans-serif;
@@ -43,7 +44,10 @@
 	--bg-secondary: #042C48;
 
 }
-
+.bangla_font{
+	--passion: "Noto Sans Bengali", sans-serif;
+	--poppins: "Noto Sans Bengali", sans-serif;
+}
 /* Dark Mode CSS end */
 
 
@@ -372,7 +376,9 @@ p {
 	border: 1px solid var(--paragraph-color-66);
 	outline: 0;
 }
-
+.menu-buttons .language select.lan_mobile {
+	display: none;
+}
 .menu-buttons .phone a {
 	font-family: var(--poppins);
 	color: var(--text-white-color);
@@ -383,7 +389,9 @@ p {
 	border: 1px solid var(--transparent);
 	display: inline-block;
 }
-
+.menu-buttons .phone a.phone_mobile{
+	display: none;
+}
 .menu-buttons .phone a i {
 	margin-right: 7px;
 }
@@ -394,6 +402,7 @@ p {
 	border: 1px solid var(--paragraph-color-66);
 }
 
+.menu-buttons .auth-link .login_mobile,
 .menu-buttons .auth-link .login {
 	padding: 8px 10px;
 	background: var(--primary-color);
@@ -401,7 +410,9 @@ p {
 	color: var(--text-white-color);
 	border: 1px solid var(--transparent);
 }
-
+.menu-buttons .auth-link .login_mobile{
+	display: none;
+}
 .menu-buttons .auth-link .login:hover {
 	background-color: var(--white-color);
 	border: 1px solid var(--paragraph-color-66);
@@ -1678,7 +1689,13 @@ p {
 	border: 1px solid var(--title-color);
 	padding: 12px;
 }
-
+input.custom_input{
+	border: 1px solid var(--title-color);
+	padding: 12px;
+}
+input.custom_input:focus{
+	box-shadow: unset;
+}
 .cart-card .coupon input:focus {
 	box-shadow: unset;
 }
@@ -4019,8 +4036,9 @@ p {
 	color: #ffffff;
 }
 
+.dark-mode .course-plan .what-will-get,
 .dark-mode .course-plan .what-will-get * {
-	color: #ffffff;
+	color: #ffffff !important;
 }
 
 /* course details end */
