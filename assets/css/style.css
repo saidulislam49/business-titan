@@ -365,6 +365,7 @@ p {
 	color: var(--color-33);
 	font-style: 12px;
 	transition: all .3s linear;
+	font-family: var(--poppins);
 }
 
 .menu-buttons .language select:hover {
@@ -4134,7 +4135,7 @@ input.custom_input:focus{
 	background: transparent;
 }
 
-.newsroom-bottom .news-comment-box .comment-btn {
+.dark-mode .newsroom-bottom .news-comment-box .comment-btn {
 	background: var(--dark-light);
 }
 
