@@ -272,6 +272,9 @@
 	.button_navv2 .edit_icon {
 		padding: 5px 10px;
 	}
+	.instructor-profile-area .instructor_social_links {
+        margin: 30px 0;
+    }
 
 }
 
@@ -516,6 +519,22 @@
 		flex-direction: column;
 		row-gap: 8px;
 	}
+	.instructor-profile-area{
+        text-align: center;
+    }
+    .instructor-profile-area .profile_img {
+        width: 50%;
+    }
+    .instructor-profile-area .name {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    .instructor-profile-area .designation * {
+        font-size: 16px; ;
+    }
+    .instructor-profile-area .instructor_social_links {
+        justify-content: center;
+    }
 }
 
 @media all and (max-width:575px) {
@@ -879,6 +898,13 @@
 	.callCenter-section .call-detail-wrap {
 		background-size: 70%;
 	}
+	.instructor-profile-area .name {
+        font-size: 30px;
+        margin: 20px 0 8px;
+    }
+    .instructor-profile-area .instructor_social_links {
+        column-gap: 10px;
+    }
 }
 
 @media all and (max-width:520px) {
